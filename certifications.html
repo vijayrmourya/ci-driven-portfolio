@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Certifications — Vijay Mourya</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .badges-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:12px}
+    .badge{background:rgba(255,255,255,0.01);padding:12px;border-radius:10px;text-align:center}
+    .badge img{max-width:140px;height:auto;display:block;margin:0 auto 8px}
+    .issuer{font-size:.9rem;color:var(--muted)}
+    .small-note{font-size:.9rem;color:var(--muted);margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- reuse your header/nav -->
+    <header class="header">
+      <div class="brand"><div class="logo">VM</div><div><div class="title">Vijay Mourya</div><div class="small">Certifications & Badges</div></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="study.html">Study</a><a href="contact.html">Contact</a><a href="certifications.html" class="active">Certifications</a></nav>
+      <div class="mobile-menu"><select id="mobile-nav"><option value="index.html">Home</option><option value="about.html">About</option><option value="services.html">Services</option><option value="projects.html">Projects</option><option value="study.html">Study</option><option value="contact.html">Contact</option><option selected value="certifications.html">Certifications</option></select></div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1>Certifications & Digital Badges</h1>
+        <p class="small">Below are verifiable credentials I’ve earned (Credly / Coursera / Google / others). Click any badge to view verification pages.</p>
+
+        <div class="badges-grid">
+          <!-- Example badge items: add your own by copying this block and updating filenames/links -->
+          <div class="badge">
+            <a href="https://www.credly.com/.../verification-link" target="_blank" rel="noopener">
+              <img src="assets/badges/credly-aws-saa.png" alt="AWS SAA badge">
+              <div class="issuer">AWS Certified Solutions Architect — Associate</div>
+            </a>
+          </div>
+
+          <div class="badge">
+            <a href="https://www.coursera.org/account/accomplishments/verify/COURSECODE" target="_blank" rel="noopener">
+              <img src="assets/badges/coursera-ml.png" alt="Coursera ML">
+              <div class="issuer">Coursera — Machine Learning Foundations</div>
+            </a>
+          </div>
+
+          <div class="badge">
+            <a href="https://www.credly.com/.../another-badge" target="_blank" rel="noopener">
+              <img src="assets/badges/google-cloud.png" alt="Google Cloud Badge">
+              <div class="issuer">Google Cloud — Skills Boost</div>
+            </a>
+          </div>
+
+          <!-- Add as many badges as you want -->
+        </div>
+
+        <div class="small-note">
+          Tip: Save badge images in <code>assets/badges/</code> and use the official verification URL (Credly / Coursera verify link / LinkedIn cert URL). If you want, I can extract verification links from specific certs for you — paste the URLs and I’ll add them.
+        </div>
+      </section>
+
+      <footer class="footer"><div class="small">You can also include a short PDF transcript or group badges by issuer (AWS / Coursera / Google / Credly).</div></footer>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

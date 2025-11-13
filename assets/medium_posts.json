@@ -1,0 +1,41 @@
+{
+  "source": "https://medium.com/@vjmourya",
+  "posts": [
+    {
+      "title": "How I Stopped Getting “AI Summaries” That Read Like Batman Explaining His Feelings",
+      "link": "https://medium.com/@vjmourya/how-i-stopped-getting-ai-summaries-that-read-like-batman-explaining-his-feelings-51183a937222?source=rss-c49948e7594d------2",
+      "date": "2025-10-13T14:12:55",
+      "excerpt": "<p>You copy-paste a 12-page report into ChatGPT (or your Gen AI flavor of the month), confidently type <strong>“Summarize this”</strong>, hit enter… and boom — out comes a summary that sounds like a h…"
+    },
+    {
+      "title": "Emotions in the AI? How Your Prompts Shape Its Personality!",
+      "link": "https://medium.com/@vjmourya/emotions-in-the-ai-how-your-prompts-shape-its-personality-f6168a7f985a?source=rss-c49948e7594d------2",
+      "date": "2025-09-27T10:00:58",
+      "excerpt": "<p>AI girlfriends are everywhere. From viral TikTok clips of people confessing their “relationships” with chatbots, to apps promising the perfect always-listening, never-judging companion — the world …"
+    },
+    {
+      "title": "AI Under the Hood: What Really Happens When You Chat with an AI Model",
+      "link": "https://medium.com/@vjmourya/ai-under-the-hood-what-really-happens-when-you-chat-with-an-ai-model-1e126e542939?source=rss-c49948e7594d------2",
+      "date": "2025-09-21T05:41:01",
+      "excerpt": "<p>You type a question into an AI chatbot — whether it’s OpenAI’s <strong>GPT</strong>, Anthropic’s <strong>Claude</strong>, Google’s <strong>Gemini</strong>, or Meta’s <strong>LLaMA</strong> — hit se…"
+    },
+    {
+      "title": "The Hidden Container Running in Every Pod (And Why It Matters)",
+      "link": "https://medium.com/@vjmourya/the-hidden-container-running-in-every-pod-and-why-it-matters-dee12a139145?source=rss-c49948e7594d------2",
+      "date": "2025-09-20T17:12:04",
+      "excerpt": "<p>“What the Pod!”</p><p>If you’ve spent even a week in Kubernetes land, you’ve probably heard this line: <em>“A Pod is the smallest deployable unit.”</em></p><p>Sounds simple, right? But that sentenc…"
+    },
+    {
+      "title": "What is a JWT? How OIDC Providers Like GitLab/Github Generate Tokens for Pipelines",
+      "link": "https://medium.com/@vjmourya/what-is-a-jwt-how-oidc-providers-like-gitlab-github-generate-tokens-for-pipelines-cf3cbae9fabf?source=rss-c49948e7594d------2",
+      "date": "2025-09-06T12:52:56",
+      "excerpt": "<p>Have you ever copied one of those ridiculously long strings that start with eyJhbGciOi... and wondered:</p><p><em>“What is this thing, and why does AWS or GitLab care so much about it?”</em></p><p>…"
+    },
+    {
+      "title": "OIDC Under the Hood: How Pipelines Really Authenticate to AWS (GitLab Example)",
+      "link": "https://medium.com/@vjmourya/oidc-under-the-hood-how-pipelines-really-authenticate-to-aws-gitlab-example-891bac8a80b3?source=rss-c49948e7594d------2",
+      "date": "2025-09-05T08:40:35",
+      "excerpt": "<p>At first, it almost feels like magic — your pipeline runs, an OIDC token appears, and somehow AWS turns it into usable credentials.</p><p>Have you noticed that all the big CI/CD platforms (GitLab, …"
+    }
+  ]
+}
