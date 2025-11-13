@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vijay Mourya — Experience</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Vijay Mourya — Systems, Cloud & Edge</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,76 +13,93 @@
         <div class="logo">VM</div>
         <div>
           <div class="title">Vijay Mourya</div>
-          <div class="small">Senior DevOps / Cloud & Infra Reliability Engineer</div>
+          <div class="small">Senior DevOps & Cloud Reliability Engineer — Pune</div>
         </div>
       </div>
 
       <nav class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link active">Experience</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="study.html" class="nav-link">Study</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="study.html">Study</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
       <div class="mobile-menu">
-        <select onchange="location = this.value">
-          <option value="index.html">Experience</option>
-          <option value="education.html">Education</option>
+        <select id="mobile-nav">
+          <option value="index.html">Home</option>
+          <option value="about.html">About</option>
+          <option value="services.html">Services</option>
           <option value="projects.html">Projects</option>
           <option value="study.html">Study</option>
+          <option value="contact.html">Contact</option>
         </select>
       </div>
     </header>
 
     <main>
-      <section class="card hero">
+      <section class="hero-card hero">
         <div>
-          <h1>Professional experience</h1>
-          <p class="small">Senior DevOps & Infrastructure Reliability Engineer experienced in multi-cloud (AWS / GCP), CI/CD automation, Terraform, Kubernetes (EKS/GKE), Python automation, and large-scale monitoring and runbooks. (Summary drawn from resume and CV.)</p>
+          <h1>Hello — I build reliable cloud & edge platforms</h1>
+          <p class="small">I design and operate infra for high-availability systems, Kubernetes & edge compute, and automated model deployment pipelines. I work across AWS/GCP and love turning messy infra into reproducible, monitored systems.</p>
 
-          <div class="section">
-            <h2>Roche — DevOps Engineer, Infra Reliability Engg</h2>
-            <p>July 2023 – Present, Pune, Maharashtra — Working on infrastructure reliability, automation, and platform reliability practices. (Source: resume.) :contentReference[oaicite:2]{index=2}</p>
+          <div class="row">
+            <a class="cta" href="about.html">About me</a>
+            <a class="cta" href="projects.html">View projects</a>
+            <a class="cta" href="contact.html">Contact</a>
           </div>
 
-          <div class="section">
-            <h2>Amazon Development Centre (India) — DevOps Engineer</h2>
-            <p>Apr 2022 – Jun 2023, Hyderabad — Built AWS serverless solutions, Lambdas, API Gateway, DynamoDB integrations, and CI/CD workflows. On-call incident handling and SOP/documentation ownership. (Selected achievements include lambda orchestration using SQS/Step Functions and migration planning for VIPs/ALB.) :contentReference[oaicite:3]{index=3}</p>
-          </div>
-
-          <div class="section">
-            <h2>Tata Consultancy Services — AWS DevOps Engineer / System Engineer</h2>
-            <p>Jul 2019 – Mar 2022, Nagpur — Assisted cloud migrations, Terraform provisioning, Jenkins-based CI/CD, and automated disaster recovery workflows. :contentReference[oaicite:4]{index=4}</p>
-          </div>
-
-          <div class="section">
-            <h2>Skills & Technologies</h2>
+          <div class="section" style="margin-top:14px">
+            <h2>Quick facts</h2>
             <div class="row">
-              <span class="tag">AWS</span>
-              <span class="tag">GCP</span>
-              <span class="tag">Terraform</span>
-              <span class="tag">Kubernetes (EKS/GKE)</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">Python</span>
+              <div class="card" style="padding:12px">
+                <div class="kv">Companies</div>
+                <div class="small">Roche • Amazon • TCS</div>
+              </div>
+              <div class="card" style="padding:12px">
+                <div class="kv">Core</div>
+                <div class="small">Kubernetes • Terraform • CI/CD • Python</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <aside class="card" style="padding:14px">
-          <h2>Contact</h2>
-          <p class="small">Email: <strong>vijayrmourya@gmail.com</strong></p>
-          <p class="small">Phone: <strong>+91-9511705294</strong></p>
-          <p class="small">Location: Pune, Maharashtra</p>
-
-          <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,.03)">
-          <h2>Profiles</h2>
-          <p class="small">
-            GitHub: <a href="https://github.com/vijayrmourya" target="_blank">github.com/vijayrmourya</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/vijay-mourya-3b409b146" target="_blank">linkedin.com/in/vijay-mourya-3b409b146</a>
-          </p>
+        <aside class="card" style="padding:18px">
+          <div style="text-align:center">
+            <!-- optional avatar: place assets/avatar.jpg in repo -->
+            <img src="assets/avatar.jpg" alt="Vijay" style="width:120px;height:120px;border-radius:12px;object-fit:cover;margin-bottom:10px">
+            <h3 style="margin:6px 0;">Vijay Mourya</h3>
+            <p class="small">Senior DevOps & Infra Reliability Engineer</p>
+            <p class="small"><a href="https://github.com/vijayrmourya" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/vijay-mourya-3b409b146" target="_blank">LinkedIn</a></p>
+            <p style="margin-top:10px"><a class="cta" href="resume.pdf" target="_blank">Download Resume</a></p>
+          </div>
         </aside>
       </section>
 
-      <footer>
-        <div class="small">Content sourc
+      <section style="margin-top:18px">
+        <h2 class="section-title">Featured projects <small class="label"><a href="projects.html">see all</a></small></h2>
+        <div class="grid projects-list">
+          <a href="https://github.com/vijayrmourya" target="_blank" class="card">
+            <strong>GitHub repositories</strong>
+            <div class="small">Terraform modules, automation scripts, infra tools.</div>
+          </a>
+          <div class="card">
+            <strong>Serverless Orchestration</strong>
+            <div class="small">S3 → Lambda → DynamoDB pipelines (at Amazon).</div>
+          </div>
+          <div class="card">
+            <strong>Infra Automation & IaC</strong>
+            <div class="small">Terraform remote state, CI integration, DR plans.</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="small">© Vijay Mourya — Built with GitHub Pages</div>
+      </footer>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

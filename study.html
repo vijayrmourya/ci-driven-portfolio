@@ -1,66 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vijay — Study & Learning</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Study — Vijay Mourya</title><link rel="stylesheet" href="styles.css"></head>
 <body>
   <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div class="logo">VM</div>
-        <div>
-          <div class="title">Vijay Mourya</div>
-          <div class="small">Study, Reading & Learning</div>
-        </div>
-      </div>
-
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Experience</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="study.html" class="nav-link active">Study</a>
-      </nav>
-
-      <div class="mobile-menu">
-        <select onchange="location = this.value">
-          <option value="index.html">Experience</option>
-          <option value="education.html">Education</option>
-          <option value="projects.html">Projects</option>
-          <option selected value="study.html">Study</option>
-        </select>
-      </div>
+    <header class="header"><div class="brand"><div class="logo">VM</div><div><div class="title">Vijay Mourya</div><div class="small">Study notes & posts</div></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="study.html">Study</a><a href="contact.html">Contact</a></nav>
+      <div class="mobile-menu"><select id="mobile-nav"><option value="index.html">Home</option><option value="about.html">About</option><option value="services.html">Services</option><option value="projects.html">Projects</option><option selected value="study.html">Study</option><option value="contact.html">Contact</option></select></div>
     </header>
 
     <main>
       <section class="card">
-        <h1>Study & learning</h1>
-        <p class="small">Notes on professional learning and areas of ongoing study. (Based on resume summary.) :contentReference[oaicite:16]{index=16}</p>
+        <h1>Study & notes</h1>
+        <p class="small">Short technical writeups and learning logs. Add files like `posts/post-title.html` and link them here when ready.</p>
 
-        <div class="section">
-          <h2>Learning focus</h2>
-          <ol class="small">
-            <li>Advanced Cloud Architectures (AWS / GCP)</li>
-            <li>Infrastructure Automation (Terraform, CDK)</li>
-            <li>Kubernetes internals & operator patterns</li>
-            <li>Machine learning foundations & model deployment</li>
-          </ol>
-        </div>
-
-        <div class="section">
-          <h2>Reading & courses</h2>
-          <ul class="small">
-            <li>AWS Machine Learning Foundations (Udacity)</li>
-            <li>Architecting with Google Kubernetes Engine</li>
-            <li>Designing Data-Intensive Applications (selected notes)</li>
-          </ul>
+        <div class="grid">
+          <div class="card">
+            <strong>Edge AI: Jetson orchestration</strong>
+            <div class="small">Notes on building hybrid edge clusters and TensorRT optimizations.</div>
+          </div>
+          <div class="card">
+            <strong>Terraform remote state patterns</strong>
+            <div class="small">Best practices for locking and workspaces for multiple teams.</div>
+          </div>
         </div>
       </section>
 
-      <footer><div class="small">Add links to blog posts or study notes (Medium/GitHub) for each item.</div></footer>
+      <footer class="footer"><div class="small">Want a static blog generator (Hugo/Jekyll)? I can add a GitHub Actions workflow to build and publish.</div></footer>
     </main>
   </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
