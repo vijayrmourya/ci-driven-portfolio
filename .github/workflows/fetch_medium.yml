@@ -28,7 +28,7 @@ jobs:
 
       - name: Run fetch script
         env:
-          MEDIUM_USERNAME: vijayrmourya
+          MEDIUM_USERNAME: vjmourya
           MAX_POSTS: '6'
         run: |
           python tools/fetch_medium.py assets/medium_posts.json

@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Study — Vijay Mourya</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css"></head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Social & Content — Vijay Mourya</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css"></head>
 <body>
   <div class="container">
-    <header class="header"><div class="brand"><img src="assets/DP/ProfilePicture.png" alt="VM" class="logo" style="width:56px;height:56px;border-radius:12px;"><div><div class="title">Vijay Mourya</div><div class="small">Study notes & posts</div></div></div>
+    <header class="header"><div class="brand"><img src="assets/DP/ProfilePicture.png" alt="VM" class="logo" style="width:56px;height:56px;border-radius:12px;"><div><div class="title">Vijay Mourya</div><div class="small">Social Profiles & Content</div></div></div>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
         <a href="certifications.html">Certifications</a>
-        <a href="study.html" class="active">Study</a>
+        <a href="study.html" class="active">Social</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="mobile-menu"><select id="mobile-nav">
@@ -19,84 +19,145 @@
         <option value="experience.html">Experience</option>
         <option value="projects.html">Projects</option>
         <option value="certifications.html">Certifications</option>
-        <option selected value="study.html">Study</option>
+        <option selected value="study.html">Social</option>
         <option value="contact.html">Contact</option>
       </select></div>
     </header>
 
     <main>
         <section class="card hero-card">
-        <h1>📚 Study & Learning</h1>
-        <p class="small">Technical articles, learning notes, and knowledge sharing. I write about DevOps, cloud infrastructure, Kubernetes, and software engineering best practices.</p>
+        <h1>🌐 Social Profiles & Content</h1>
+        <p class="small">Connect with me across platforms. I share technical insights, open-source contributions, and professional updates.</p>
 
+        <!-- Professional Networks -->
         <div class="section">
-          <h2>Latest from Medium</h2>
-          <div id="medium-posts" class="small">Loading posts…</div>
+          <h2>💼 Professional Networks</h2>
+          <div class="grid">
+            <a href="https://www.linkedin.com/in/vijay-mourya-3b409b146" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <span style="font-size:2.5rem">💼</span>
+                <div>
+                  <strong style="font-size:1.1rem;color:#e6eef8">LinkedIn</strong>
+                  <div class="small" style="color:var(--muted)">Professional network & career updates</div>
+                </div>
+              </div>
+              <div class="small">
+                Connect for professional networking, recommendations, and career opportunities.
+              </div>
+            </a>
+
+            <a href="https://github.com/vijayrmourya" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <span style="font-size:2.5rem">💻</span>
+                <div>
+                  <strong style="font-size:1.1rem;color:#e6eef8">GitHub</strong>
+                  <div class="small" style="color:var(--muted)">Open source & code repositories</div>
+                </div>
+              </div>
+              <div class="small">
+                Infrastructure code, Terraform modules, automation scripts, and open-source contributions.
+              </div>
+            </a>
+          </div>
         </div>
 
+        <!-- Content & Writing -->
         <div class="section">
-          <h2>Technical Deep Dives</h2>
+          <h2>✍️ Technical Writing & Content</h2>
           <div class="grid">
-            <div class="card">
-              <strong>🤖 Edge AI: Jetson Orchestration</strong>
-              <div class="small" style="margin-top:8px">
-                Building hybrid edge clusters with NVIDIA Jetson devices. Covers TensorRT optimizations, GPU scheduling, and edge-to-cloud data pipelines.
+            <a href="https://medium.com/@vjmourya" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <span style="font-size:2.5rem">📝</span>
+                <div>
+                  <strong style="font-size:1.1rem;color:#e6eef8">Medium</strong>
+                  <div class="small" style="color:var(--muted)">Technical articles & tutorials</div>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <strong>🏗️ Terraform Remote State Patterns</strong>
-              <div class="small" style="margin-top:8px">
-                Best practices for state locking, workspace management, and multi-team collaboration. Includes backend configuration strategies for AWS S3 & GCS.
+              <div class="small">
+                Deep dives on AWS, DevOps, Kubernetes, AI, serverless architecture, and cloud infrastructure.
               </div>
-            </div>
-            <div class="card">
-              <strong>⚙️ GitLab CI/CD at Scale</strong>
-              <div class="small" style="margin-top:8px">
-                Lessons from managing multi-cloud GitLab runner platforms. Auto-scaling, cost optimization, and security hardening strategies.
-              </div>
-            </div>
-            <div class="card">
-              <strong>🔐 Zero-Trust Architecture on AWS</strong>
-              <div class="small" style="margin-top:8px">
-                Implementing zero-trust security patterns with AWS PrivateLink, VPC endpoints, and identity-based access controls.
-              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Latest Medium Posts -->
+        <div class="section">
+          <h2>📝 Latest from Medium</h2>
+          <p class="small" style="margin-bottom:16px">
+            Recent technical articles on AWS, DevOps, Kubernetes, AI, and cloud infrastructure.
+          </p>
+          <div id="medium-posts" class="grid">
+            <div class="card" style="text-align:center;padding:40px">
+              <div class="small" style="color:var(--muted)">Loading posts…</div>
             </div>
           </div>
         </div>
 
+        <!-- Learning & Certifications -->
         <div class="section">
-          <h2>Learning Resources</h2>
+          <h2>🎓 Learning & Certifications</h2>
           <div class="grid">
-            <div class="card">
-              <strong>📖 Recommended Reading</strong>
-              <div class="small" style="margin-top:8px">
-                • Site Reliability Engineering (Google)<br>
-                • The DevOps Handbook<br>
-                • Kubernetes Patterns<br>
-                • Terraform: Up & Running
+            <a href="https://www.credly.com" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <span style="font-size:2.5rem">🏆</span>
+                <div>
+                  <strong style="font-size:1.1rem;color:#e6eef8">Credly</strong>
+                  <div class="small" style="color:var(--muted)">Verified badges & certifications</div>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <strong>🎓 Current Learning Path</strong>
-              <div class="small" style="margin-top:8px">
-                • AWS Solutions Architect Professional<br>
-                • Service Mesh (Istio & Linkerd)<br>
-                • eBPF for observability<br>
-                • Platform Engineering patterns
+              <div class="small">
+                AWS certifications and professional badges with verification.
               </div>
-            </div>
+            </a>
+
+            <a href="certifications.html" class="card" style="display:block;text-decoration:none">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <span style="font-size:2.5rem">📜</span>
+                <div>
+                  <strong style="font-size:1.1rem;color:#e6eef8">Course Certificates</strong>
+                  <div class="small" style="color:var(--muted)">View all completion certificates</div>
+                </div>
+              </div>
+              <div class="small">
+                37+ certificates from AWS Skill Builder, KodeKloud, A Cloud Guru, and more.
+              </div>
+            </a>
           </div>
         </div>
+
+        <!-- Other Links -->
+        <div class="section">
+          <h2>🔗 Additional Profiles</h2>
+          <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+            <a href="https://stackoverflow.com" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none;text-align:center;padding:24px">
+              <div style="font-size:2.5rem;margin-bottom:8px">💬</div>
+              <strong style="color:#e6eef8">Stack Overflow</strong>
+              <div class="small" style="margin-top:4px;color:var(--muted)">Q&A contributions</div>
+            </a>
+
+            <a href="https://dev.to" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none;text-align:center;padding:24px">
+              <div style="font-size:2.5rem;margin-bottom:8px">👨‍💻</div>
+              <strong style="color:#e6eef8">Dev.to</strong>
+              <div class="small" style="margin-top:4px;color:var(--muted)">Developer community</div>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none;text-align:center;padding:24px">
+              <div style="font-size:2.5rem;margin-bottom:8px">🐦</div>
+              <strong style="color:#e6eef8">Twitter/X</strong>
+              <div class="small" style="margin-top:4px;color:var(--muted)">Tech updates & thoughts</div>
+            </a>
+          </div>
+        </div>
+
       </section>
 
       <footer class="footer">
         <div class="small">
-          Want to discuss a technical topic? <a href="contact.html">Reach out</a> — I'm always happy to chat about DevOps & infrastructure.
+          Connect with me on any platform • Open to collaborations and discussions
         </div>
       </footer>
     </main>
   </div>
   <script src="scripts.js"></script>
-  <script>renderMediumPosts();</script>
 </body>
 </html>

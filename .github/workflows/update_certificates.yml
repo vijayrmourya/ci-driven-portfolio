@@ -1,0 +1,99 @@
+name: Update Certificates Metadata
+
+on:
+  push:
+    paths:
+      - 'assets/certificates/**/*.pdf'
+      - 'tools/generate_certificates.py'
+      - '.github/workflows/update_certificates.yml'
+  schedule:
+    # Run daily at 12:00 UTC to catch any manual additions
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    # Allow manual trigger from Actions tab
+
+jobs:
+  generate-metadata:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Get full history for proper commit detection
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Check for certificate changes
+        id: check_changes
+        run: |
+          # Count PDF files
+          PDF_COUNT=$(find assets/certificates -name "*.pdf" 2>/dev/null | wc -l)
+          echo "pdf_count=$PDF_COUNT" >> $GITHUB_OUTPUT
+          echo "Found $PDF_COUNT PDF certificates"
+
+      - name: Generate certificates metadata
+        run: |
+          echo "🔄 Generating certificates metadata..."
+          python3 tools/generate_certificates.py
+          echo "✅ Certificates metadata generated"
+
+      - name: Check for changes in certificates.json
+        id: check_json_changes
+        run: |
+          if git diff --quiet assets/certificates.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in certificates.json"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in certificates.json"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_json_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add the certificates.json file
+          git add assets/certificates.json
+          
+          # Create commit message with certificate count
+          PDF_COUNT=$(find assets/certificates -name "*.pdf" | wc -l)
+          git commit -m "chore: update certificates metadata ($PDF_COUNT certificates)"
+          
+          # Push changes
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Certificate Update Summary 📊" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          PDF_COUNT=$(find assets/certificates -name "*.pdf" 2>/dev/null | wc -l)
+          echo "- **Total Certificates**: $PDF_COUNT" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_json_changes.outputs.changed }}" == "true" ]; then
+            echo "- **Status**: ✅ Metadata updated and committed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status**: ℹ️ No changes detected" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "#### Categories:" >> $GITHUB_STEP_SUMMARY
+          for dir in assets/certificates/*/; do
+            if [ -d "$dir" ]; then
+              category=$(basename "$dir")
+              count=$(find "$dir" -name "*.pdf" | wc -l)
+              if [ $count -gt 0 ]; then
+                echo "- **$category**: $count certificates" >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          done
+
