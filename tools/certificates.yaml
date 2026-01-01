@@ -127,7 +127,7 @@ certificates:
   provider: AWS Skill Builder
   category: ArtificialIntellegence_MachineLearning
   filename: AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf
-  completion_date: ''
+  completion_date: '2025-12-25'
   verification_url: ''
 - title: AWS Artificial Intelligence Practitioner Learning Plan
   provider: AWS Skill Builder
@@ -231,11 +231,11 @@ certificates:
   filename: KodeKloud_Learning-Linux-Basics-Course-Labs_VIJAY-MOURYA.pdf
   completion_date: ''
   verification_url: ''
-- title: Introduction to ansible
+- title: Introduction to Ansible
   provider: A Cloud Guru
   category: Ansible
   filename: ACloudGuru Introduction to ansible.pdf
-  completion_date: ''
+  completion_date: '2023-06-10'
   verification_url: ''
 categories:
   Cloud:
