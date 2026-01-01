@@ -80,48 +80,48 @@ certificates:
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-AWS Lambda Foundations_AWS Course Completion Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-07'
   verification_url: ''
 - title: Amazon API Gateway for Serverless Applications
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Amazon API Gateway for Serverless Applications_AWS Course
     Completion Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-12'
   verification_url: ''
 - title: Amazon DynamoDB for Serverless Architectures
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Amazon DynamoDB for Serverless Architectures_AWS Course
     Completion Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-12'
   verification_url: ''
 - title: Getting into the Serverless Mindset
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Getting into the Serverless Mindset_AWS Course Completion
     Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-14'
   verification_url: ''
 - title: Introduction to Serverless Development
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Introduction to Serverless Development_AWS Course Completion
     Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-15'
   verification_url: ''
 - title: Introduction to Step Functions
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Introduction to Step Functions_AWS Course Completion Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-17'
   verification_url: ''
 - title: Scaling Serverless Architectures
   provider: AWS Skill Builder
   category: Serverless
   filename: AWSSkillBuilder-Scaling Serverless Architectures_AWS Course Completion
     Certificate.pdf
-  completion_date: ''
+  completion_date: '2023-03-06'
   verification_url: ''
 - title: Security, Compliance, and Governance for AI Solutions
   provider: AWS Skill Builder
@@ -177,11 +177,11 @@ certificates:
   filename: Udacity-AWS-Machine-Learning-Foundations-2022.pdf
   completion_date: '2022-09-01'
   verification_url: ''
-- title: Getting Started with DevOps on AWS
+- title: Getting Started with DevOps on AWS - 
   provider: AWS Skill Builder
   category: DevOps
   filename: AWSSkillBuilder-Getting Started with DevOps on AWS Course Completion Certificate.pdf
-  completion_date: ''
+  completion_date: '2022-09-04'
   verification_url: ''
 - title: IBMCoursera Introduction to Agile Development and Scrum
   provider: Coursera
@@ -207,17 +207,17 @@ certificates:
   filename: KodeKloud-Course-Certificate_12-Factor-App_VIJAY-MOURYA.pdf.pdf
   completion_date: ''
   verification_url: ''
-- title: IBMCoursera Python for Data Science, AI & Development
-  provider: Coursera
-  category: Python
+- title: Python for Data Science, AI & Development
+  provider: Coursera (IBM)
+  category: ArtificialIntellegence_MachineLearning
   filename: IBMCoursera_Python for Data Science, AI & Development.pdf
-  completion_date: ''
+  completion_date: '2025-12-21'
   verification_url: ''
-- title: KodeKloud Terraform Basics Training Course
+- title: Terraform Basics Training Course
   provider: KodeKloud
   category: Terraform
   filename: KodeKloud_Terraform-Basics-Training-Course_.pdf
-  completion_date: ''
+  completion_date: '2022-09-25'
   verification_url: ''
 - title: Jenkins Training Course VIJAY MOURYA
   provider: KodeKloud
