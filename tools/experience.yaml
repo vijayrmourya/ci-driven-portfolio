@@ -1,0 +1,218 @@
+# Experience Configuration File
+# Last updated: 2025-12-31
+#
+# Instructions:
+#   1. Update existing entries or add new experiences below
+#   2. Run: python3 tools/generate_experience.py
+#   3. The script will automatically update experience.html
+#
+# To add a new experience:
+#   1. Add an entry under 'experiences' with all required fields
+#   2. Add projects/contributions under 'projects' for that experience
+#   3. Run the generation script
+
+experiences:
+  - id: roche
+    company: Roche Information Solutions India
+    location: Pune, India
+    role: Senior DevOps Engineer • Service Owner
+    start_date: "2023-07"
+    end_date: present
+    duration: 1.5+ years
+    color: "#60a5fa"
+    order: 1
+
+    projects:
+      - title: "🎯 Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)"
+        highlights:
+          - "Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP"
+          - "Supporting 10+ teams and 1,500+ jobs per release cycle, reducing manual efforts significantly"
+          - "Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build"
+          - "Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration"
+          - "Packaged solution as reusable Terraform module for consistent, rapid deployments"
+          - "Authored comprehensive architecture and implementation documentation"
+          - "Standardized deployment process through IaC, achieving 30% faster delivery, reduced error rates, and cost optimization"
+
+      - title: "⚡ Event-driven AWS Patch Management System"
+        highlights:
+          - "Designed and deployed fully automated, event-driven patch management solution for AWS"
+          - "Patching 500+ EC2 instances monthly, improving security and operational efficiency"
+          - "Developed metrics framework (Athena and S3) for actionable insights and BDD enablement"
+          - "Presented solution to ~500 attendees at domain-wide event with video tutorial content"
+          - "Authored technical documentation, troubleshooting SOPs, and system architecture diagrams (Lucid)"
+          - "Implemented CI/CD pipeline for serverless deployments with TDD practices (unit & integration tests)"
+          - "Recognized for optimizing patch management, reducing manual intervention, operational costs, and improving infrastructure security"
+
+      - title: "🚀 Other Key Contributions"
+        highlights:
+          - "Mentored junior engineers and led scrum meetings in absence of PM/PO, managing Jira boards"
+          - "Supported product launch initiatives through technical and business presentations"
+          - "Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources"
+          - "Deployed SSM document-based automations for configuration compliance and EC2 lifecycle management"
+          - "Enhanced hardened machine image (AMI/GCP image) pipelines integrating Ansible playbooks and Packer"
+          - "Engineered dynamic, parameterized GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning"
+
+    tech_stack: "AWS (EKS, Lambda, EventBridge, Systems Manager, CodePipeline, Athena, S3) • GCP (GKE, Cloud Build) • Kubernetes • Terraform • GitLab CI/CD • Helm • Packer • Ansible • Docker • Python • Jinja2 • Bash • Lucid/Draw.io"
+
+  - id: amazon
+    company: Amazon Development Centre India
+    location: Hyderabad, India
+    role: DevOps Engineer • On-Call PoC
+    start_date: "2022-04"
+    end_date: "2023-06"
+    duration: 1 year 3 months
+    color: "#60a5fa"
+    order: 2
+
+    projects:
+      - title: "⚙️ Serverless Ops Engine"
+        highlights:
+          - "Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability"
+          - "Designed and implemented high-throughput AWS Lambda workflows to process large-scale CSV/JSON data from S3"
+          - "Leveraged asynchronous invocation, file indexing, and function chaining to resolve Lambda timeout constraints and optimize data ingestion into DynamoDB"
+          - "Created solution design diagrams with Draw.io and documented implementation with SOP guide books"
+
+      - title: "🚨 On-Call & Incident Management"
+        highlights:
+          - "As Service PoC on call, authored detailed technical documentation, SOPs, and mitigation playbooks, significantly reducing recurring incidents and expediting team onboarding"
+          - "Managed high-severity incidents as primary on-call engineer, implementing mitigation strategies, root cause analyses, and proactive monitoring to minimize customer impact and prevent recurrence"
+          - "Contributed to KPI-driven monitoring and alerting efforts where within team I played key role in identifying KPIs to monitor & alert teams on any anomalies"
+
+      - title: "🔄 HTTP(S) VIP Migration Project"
+        highlights:
+          - "Contributed in HTTP(s) VIP migration project, transitioning infrastructure from NetScaler to AWS native load balancers (ALB/NLB)"
+          - "Developed comprehensive migration, rollback, and automation strategies, including IAM role design, prerequisite validation, and migration timeline planning"
+          - "Collaborated with globally distributed teams, contributing to system design reviews and code quality assurance to ensure robust, production-ready deliverables"
+
+    tech_stack: "AWS (Lambda, S3, DynamoDB, ALB/NLB, CloudWatch, SNS, SQS) • Python • Draw.io • On-Call Operations • Root Cause Analysis"
+
+  - id: tcs
+    company: Tata Consultancy Services Limited
+    location: Nagpur, India
+    role: DevOps Engineer
+    start_date: "2019-07"
+    end_date: "2022-03"
+    duration: 2 years 9 months
+    color: "#60a5fa"
+    order: 3
+
+    projects:
+      - title: "☁️ On-Prem to Cloud Migration"
+        highlights:
+          - "Supported cloud migration project by provisioning AWS Compute and Storage resources using Terraform and CloudFormation"
+          - "Automating AMI creation with Packer & Ansible to custom bake tools into servers"
+          - "Implemented hybrid infrastructure by integrating on-premises servers with AWS for file sharing (NAS) and establishing secure connectivity"
+
+      - title: "🔄 Disaster Recovery & CI/CD"
+        highlights:
+          - "Engineered \"point in time\" disaster recovery solutions, automating failover with Jenkins jobs triggered by SQS and developing Lambda-based monitoring and recovery actions"
+          - "Managed & Supported robust CI/CD pipelines in Jenkins for microservices and MFEs, leveraging shared libraries, multibranch pipelines, and integration with AWS CLI, SSM, and Lambda triggers"
+
+      - title: "📊 Infrastructure & Operations"
+        highlights:
+          - "Automated infrastructure monitoring and alerting using CloudWatch, SNS, and Lambda, ensuring high availability and incident response"
+          - "Deployed and managed containerized applications with Docker and Kubernetes, supporting microservices and troubleshooting pod deployments"
+          - "Collaborated with clients and internal teams to provide project updates, conduct infrastructure knowledge transfer, and deliver disaster recovery planning and documentation"
+          - "Contributed to documentation and SOPs to streamline operations, improve onboarding, and standardize change management processes"
+
+    tech_stack: "AWS (EC2, S3, CloudWatch, SNS, SQS, Lambda) • Terraform • CloudFormation • Jenkins • Packer • Ansible • Docker • Kubernetes • Python • Bash"
+
+# Achievements Section
+achievements:
+  - icon: "🎤"
+    title: Live Presentation
+    description: Presented service release to 500+ team members at Roche
+
+  - icon: "🏆"
+    title: Recognition Awards
+    description: Multiple internal recognitions for technical excellence
+
+  - icon: "📐"
+    title: Architecture Design
+    description: Service architecture design and comprehensive documentation
+
+  - icon: "📚"
+    title: Documentation
+    description: Extensive technical documentation and SOPs
+
+# Conferences
+conferences:
+  - name: KubeCon + CloudNativeCon
+    icon: "🌐"
+    location: India 2024 • Hyderabad
+
+  - name: AWS re:Invent
+    icon: "☁️"
+    location: 2024 • Las Vegas, USA
+
+# Skills
+skills:
+  - category: "☁️ Cloud Platforms"
+    items:
+      - "<strong>AWS:</strong> EC2, EKS, Lambda, S3, DynamoDB, EventBridge, Systems Manager, CloudFormation, CloudWatch"
+      - "<strong>GCP:</strong> GKE, Compute Engine, Cloud Functions, Cloud Storage"
+      - "Multi-cloud architecture & cost optimization"
+
+  - category: "🏗️ Infrastructure as Code"
+    items:
+      - "Terraform (modules, remote state, workspaces)"
+      - "Ansible (playbooks, roles, vault)"
+      - "Packer (AMI/image building)"
+      - "Helm (chart development & management)"
+      - "CloudFormation"
+
+  - category: "🚀 CI/CD & DevOps"
+    items:
+      - "GitLab CI/CD (runners, pipelines, GitOps)"
+      - "Jenkins (pipelines, plugins, distributed builds)"
+      - "GitHub Actions"
+      - "ArgoCD / GitOps practices"
+      - "Security scanning (Trivy, SonarQube)"
+
+  - category: "🐳 Containers & Orchestration"
+    items:
+      - "Kubernetes (EKS, GKE, on-prem)"
+      - "Docker (multi-stage builds, optimization)"
+      - "Container security & best practices"
+      - "Service mesh (exploring Istio)"
+
+  - category: "📊 Observability & Monitoring"
+    items:
+      - "Prometheus & Grafana"
+      - "CloudWatch (metrics, logs, alarms)"
+      - "ELK Stack (Elasticsearch, Logstash, Kibana)"
+      - "Distributed tracing & APM"
+      - "SRE practices & SLA/SLO management"
+
+  - category: "💻 Programming & Scripting"
+    items:
+      - "Python (automation, serverless, data processing)"
+      - "Bash/Shell scripting"
+      - "Go (learning for tooling)"
+      - "SQL (Athena, DynamoDB queries)"
+      - "YAML, JSON, HCL"
+
+# Career highlights stats
+career_stats:
+  - value: "6+"
+    label: Years of Experience
+    color: "#60a5fa"
+
+  - value: "3"
+    label: Major Organizations
+    color: "#4fd1c5"
+
+  - value: "1,500+"
+    label: Jobs per Release Cycle
+    color: "#60a5fa"
+
+  - value: "$10K+"
+    label: Monthly Cost Savings
+    color: "#4fd1c5"
+
+# Page metadata
+metadata:
+  page_title: "Work Experience — Vijay Mourya"
+  hero_title: "Professional Experience"
+  hero_subtitle: "6+ years building reliable cloud infrastructure and DevOps platforms across AWS, GCP, Kubernetes, and production-grade CI/CD pipelines."
+

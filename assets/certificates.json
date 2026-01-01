@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-12-30T16:08:26.456218",
-  "total_count": 37,
+  "last_updated": "2025-12-31T20:33:47.148868",
+  "total_count": 36,
   "categories": {
     "Cloud": {
       "display_name": "Cloud Services",
@@ -10,7 +10,7 @@
       "count": 10,
       "certificates": [
         {
-          "title": "ACloudGuru Introduction to aws",
+          "title": "Introduction to aws",
           "provider": "A Cloud Guru",
           "filename": "ACloudGuru_Introduction to aws.pdf",
           "path": "assets/certificates/Cloud/ACloudGuru_Introduction to aws.pdf",
@@ -144,7 +144,7 @@
       "icon": "🤖",
       "color": "#8B5CF6",
       "description": "Artificial Intelligence and Machine Learning",
-      "count": 10,
+      "count": 9,
       "certificates": [
         {
           "title": "Security, Compliance, and Governance for AI Solutions",
@@ -154,56 +154,49 @@
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder AWS Artificial Intelligence Practitioner Learning Plan",
+          "title": "AWS Artificial Intelligence Practitioner Learning Plan",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Developing Generative Artificial Intelligence Solutions",
+          "title": "Developing Generative Artificial Intelligence Solutions",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Developing Machine Learning Solutions",
+          "title": "Developing Machine Learning Solutions",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Essentials of Prompt Engineering",
+          "title": "Essentials of Prompt Engineering",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Exploring Artificial Intelligence Use Cases and Applications",
+          "title": "Exploring Artificial Intelligence Use Cases and Applications",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Fundamentals of Machine Learning and Artificial Intelligence",
+          "title": "Fundamentals of Machine Learning and Artificial Intelligence",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
           "category": "ArtificialIntellegence_MachineLearning"
         },
         {
-          "title": "AWSSkillBuilder Introduction to Generative AI Art of the Possible",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Introduction to Generative AI - Art of the Possible\n.pdf",
-          "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Introduction to Generative AI - Art of the Possible\n.pdf",
-          "category": "ArtificialIntellegence_MachineLearning"
-        },
-        {
-          "title": "AWSSkillBuilder Optimizing Foundation Models",
+          "title": "Optimizing Foundation Models",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_Optimizing Foundation Models.pdf",
           "path": "assets/certificates/ArtificialIntellegence_MachineLearning/AWSSkillBuilder_Optimizing Foundation Models.pdf",

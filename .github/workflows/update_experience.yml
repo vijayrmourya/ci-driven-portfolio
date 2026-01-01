@@ -1,0 +1,55 @@
+name: Generate Experience Page
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'tools/experience.yaml'
+      - 'tools/generate_experience.py'
+      - '.github/workflows/update_experience.yml'
+  workflow_dispatch:
+
+jobs:
+  generate-experience:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install PyYAML
+
+      - name: Generate experience page
+        run: |
+          echo "🔄 Generating experience.html from YAML..."
+          python3 tools/generate_experience.py
+          echo "✅ Experience page generated"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add the generated file
+          git add experience.html
+          
+          # Commit only if there are changes
+          if ! git diff --staged --quiet; then
+            EXP_COUNT=$(grep -c 'class="card company-card"' experience.html || echo "0")
+            git commit -m "chore: regenerate experience.html ($EXP_COUNT experiences) [skip ci]"
+            git push
+            echo "✅ Changes committed and pushed"
+          else
+            echo "ℹ️ No changes to commit"
+          fi
+

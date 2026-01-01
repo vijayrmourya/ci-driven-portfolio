@@ -1,0 +1,295 @@
+# Certificate Configuration File
+# Auto-generated on 2025-12-31 20:29:45
+#
+# Instructions:
+#   1. Fill in the 'completion_date' field for each certificate (YYYY-MM-DD format)
+#   2. Add 'verification_url' if available
+#   3. Update 'title' if the auto-generated name isn't perfect
+#   4. Run: python3 tools/generate_certificates_from_yaml.py
+#
+# To add a new certificate:
+#   1. Add the PDF to assets/certificates/{CATEGORY}/
+#   2. Add an entry below with all details
+#   3. Run the generation script
+
+certificates:
+- title: Introduction to aws
+  provider: A Cloud Guru
+  category: Cloud
+  filename: ACloudGuru_Introduction to aws.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Cloud Practitioner Essentials
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-AWS Cloud Practitioner Essentials - AWS Course Completion.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Compute Services Overview
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-AWS Compute Services Overview - Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Technical Essentials
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-AWS Technical Essentials - AWS Course Completion.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Amazon RDS Service Primer
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Amazon RDS Service Primer - AWS Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Architecting on AWS
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Architecting on AWS - AWS Course Completion.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Getting Started with AWS Security, Identity, and Compliance
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Getting Started with AWS Security, Identity, and Compliance
+    - Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Introduction to AWS CodePipeline
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Introduction to AWS CodePipeline_AWS Course Completion
+    Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Introduction to AWS Identity and Access Management
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Introduction to AWS Identity and Access Management - AWS
+    Course Completion.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Protecting your instance with SG
+  provider: AWS Skill Builder
+  category: Cloud
+  filename: AWSSkillBuilder-Protecting your instance with SG - Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Lambda Foundations
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-AWS Lambda Foundations_AWS Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Amazon API Gateway for Serverless Applications
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Amazon API Gateway for Serverless Applications_AWS Course
+    Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Amazon DynamoDB for Serverless Architectures
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Amazon DynamoDB for Serverless Architectures_AWS Course
+    Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Getting into the Serverless Mindset
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Getting into the Serverless Mindset_AWS Course Completion
+    Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Introduction to Serverless Development
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Introduction to Serverless Development_AWS Course Completion
+    Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Introduction to Step Functions
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Introduction to Step Functions_AWS Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Scaling Serverless Architectures
+  provider: AWS Skill Builder
+  category: Serverless
+  filename: AWSSkillBuilder-Scaling Serverless Architectures_AWS Course Completion
+    Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Security, Compliance, and Governance for AI Solutions
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Artificial Intelligence Practitioner Learning Plan
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Developing Generative Artificial Intelligence Solutions
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Developing Machine Learning Solutions
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Developing Machine Learning Solutions.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Essentials of Prompt Engineering
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Essentials of Prompt Engineering.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Exploring Artificial Intelligence Use Cases and Applications
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Fundamentals of Machine Learning and Artificial Intelligence
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Optimizing Foundation Models
+  provider: AWS Skill Builder
+  category: ArtificialIntellegence_MachineLearning
+  filename: AWSSkillBuilder_Optimizing Foundation Models.pdf
+  completion_date: ''
+  verification_url: ''
+- title: AWS Machine Learning Foundations 2022
+  provider: Udacity
+  category: ArtificialIntellegence_MachineLearning
+  filename: Udacity-AWS-Machine-Learning-Foundations-2022.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Getting Started with DevOps on AWS
+  provider: AWS Skill Builder
+  category: DevOps
+  filename: AWSSkillBuilder-Getting Started with DevOps on AWS Course Completion Certificate.pdf
+  completion_date: ''
+  verification_url: ''
+- title: IBMCoursera Introduction to Agile Development and Scrum
+  provider: Coursera
+  category: DevOps
+  filename: IBMCoursera_Introduction to Agile Development and Scrum.pdf
+  completion_date: ''
+  verification_url: ''
+- title: IBMCoursera Introduction to Cloud Computing
+  provider: Coursera
+  category: DevOps
+  filename: IBMCoursera_Introduction to Cloud Computing.pdf
+  completion_date: ''
+  verification_url: ''
+- title: IBM Coursera Introduction to DevOps
+  provider: Coursera
+  category: DevOps
+  filename: IBM_Coursera_Introduction to DevOps.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Course Certificate 12 Factor App VIJAY MOURYA
+  provider: KodeKloud
+  category: DevOps
+  filename: KodeKloud-Course-Certificate_12-Factor-App_VIJAY-MOURYA.pdf.pdf
+  completion_date: ''
+  verification_url: ''
+- title: IBMCoursera Python for Data Science, AI & Development
+  provider: Coursera
+  category: Python
+  filename: IBMCoursera_Python for Data Science, AI & Development.pdf
+  completion_date: ''
+  verification_url: ''
+- title: KodeKloud Terraform Basics Training Course
+  provider: KodeKloud
+  category: Terraform
+  filename: KodeKloud_Terraform-Basics-Training-Course_.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Jenkins Training Course VIJAY MOURYA
+  provider: KodeKloud
+  category: Jenkins
+  filename: KodeKloud-Jenkins-Training-Course_VIJAY-MOURYA.pdf.pdf
+  completion_date: ''
+  verification_url: ''
+- title: KodeKloud Learning Linux Basics Course Labs VIJAY MOURYA
+  provider: KodeKloud
+  category: Linux
+  filename: KodeKloud_Learning-Linux-Basics-Course-Labs_VIJAY-MOURYA.pdf
+  completion_date: ''
+  verification_url: ''
+- title: Introduction to ansible
+  provider: A Cloud Guru
+  category: Ansible
+  filename: ACloudGuru Introduction to ansible.pdf
+  completion_date: ''
+  verification_url: ''
+categories:
+  Cloud:
+    icon: ☁️
+    color: '#FF9900'
+    display_name: Cloud Services
+    description: AWS and cloud platform certifications
+  CloudArchitect:
+    icon: 🏛️
+    color: '#3B82F6'
+    display_name: Cloud Architecture
+    description: Cloud architecture and design patterns
+  Serverless:
+    icon: ⚡
+    color: '#10B981'
+    display_name: Serverless
+    description: Serverless computing and Lambda
+  ArtificialIntellegence_MachineLearning:
+    icon: 🤖
+    color: '#8B5CF6'
+    display_name: AI & Machine Learning
+    description: Artificial Intelligence and Machine Learning
+  DevOps:
+    icon: 🚀
+    color: '#4A90E2'
+    display_name: DevOps
+    description: DevOps practices and methodologies
+  Python:
+    icon: 🐍
+    color: '#3776AB'
+    display_name: Python
+    description: Python programming and development
+  Terraform:
+    icon: 🏗️
+    color: '#7B42BC'
+    display_name: Terraform
+    description: Infrastructure as Code with Terraform
+  Jenkins:
+    icon: ⚙️
+    color: '#D24939'
+    display_name: Jenkins
+    description: CI/CD automation with Jenkins
+  Linux:
+    icon: 🐧
+    color: '#FCC624'
+    display_name: Linux
+    description: Linux system administration
+  Ansible:
+    icon: 🔧
+    color: '#EE0000'
+    display_name: Ansible
+    description: Configuration management and automation
+  MachineLearning:
+    icon: 🧠
+    color: '#00D9FF'
+    display_name: Machine Learning
+    description: Machine Learning foundations
