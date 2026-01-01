@@ -187,25 +187,25 @@ certificates:
   provider: Coursera
   category: DevOps
   filename: IBMCoursera_Introduction to Agile Development and Scrum.pdf
-  completion_date: ''
+  completion_date: '2024-01-13'
   verification_url: ''
-- title: IBMCoursera Introduction to Cloud Computing
-  provider: Coursera
+- title: Introduction to Cloud Computing
+  provider: Coursera (IBM)
   category: DevOps
   filename: IBMCoursera_Introduction to Cloud Computing.pdf
-  completion_date: ''
+  completion_date: '2024-01-11'
   verification_url: ''
-- title: IBM Coursera Introduction to DevOps
-  provider: Coursera
+- title: Introduction to DevOps
+  provider: Coursera (IBM)
   category: DevOps
   filename: IBM_Coursera_Introduction to DevOps.pdf
-  completion_date: ''
+  completion_date: '2023-12-10'
   verification_url: ''
 - title: Course Certificate 12 Factor App VIJAY MOURYA
   provider: KodeKloud
   category: DevOps
   filename: KodeKloud-Course-Certificate_12-Factor-App_VIJAY-MOURYA.pdf.pdf
-  completion_date: ''
+  completion_date: '2023-05-14'
   verification_url: ''
 - title: Python for Data Science, AI & Development
   provider: Coursera (IBM)
@@ -223,13 +223,13 @@ certificates:
   provider: KodeKloud
   category: Jenkins
   filename: KodeKloud-Jenkins-Training-Course_VIJAY-MOURYA.pdf.pdf
-  completion_date: ''
+  completion_date: '2022-09-25'
   verification_url: ''
 - title: KodeKloud Learning Linux Basics Course Labs VIJAY MOURYA
   provider: KodeKloud
   category: Linux
   filename: KodeKloud_Learning-Linux-Basics-Course-Labs_VIJAY-MOURYA.pdf
-  completion_date: ''
+  completion_date: '2022-10-09'
   verification_url: ''
 - title: Introduction to Ansible
   provider: A Cloud Guru
