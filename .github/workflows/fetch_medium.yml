@@ -40,6 +40,7 @@ jobs:
           MEDIUM_USERNAME: vjmourya
           MAX_POSTS: '6'
         run: |
+          chmod +x .github/scripts/commit_and_push.sh .github/scripts/certificates_summary.sh && ls -l .github/scripts
           python tools/fetch_medium.py assets/medium_posts.json
 
       - name: Commit and push medium_posts.json
