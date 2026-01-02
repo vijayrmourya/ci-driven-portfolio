@@ -34,6 +34,7 @@ jobs:
 
       - name: Generate certificates metadata
         run: |
+          chmod +x .github/scripts/commit_and_push.sh .github/scripts/certificates_summary.sh && ls -l .github/scripts
           echo "🔄 Generating certificates metadata from YAML..."
           python3 tools/generate_certificates_from_yaml.py
           echo "✅ Certificates metadata generated"
