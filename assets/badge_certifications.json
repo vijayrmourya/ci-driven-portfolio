@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-01T17:42:05.145661",
-  "total_count": 7,
+  "last_updated": "2026-01-02T13:58:44.957653",
+  "total_count": 8,
   "categories": {
     "Credentials": {
       "display_name": "Professional Credentials",
@@ -8,7 +8,7 @@
       "color": "#FF9900",
       "description": "Professional certifications and badges from AWS, Coursera, and other platforms",
       "sort_order": 1,
-      "count": 7,
+      "count": 8,
       "certifications": [
         {
           "title": "Python for Data Science and AI",
@@ -56,6 +56,18 @@
           "category": "Credentials",
           "issue_date": "2025-11-09",
           "credential_id": "e5218185-f8ad-41e7-8a69-897bc91d189e",
+          "description": "Click to Verify"
+        },
+        {
+          "title": "Architecting with Google Kubernetes Engine",
+          "provider": "Coursera (Google Cloud Training)",
+          "badge_image": "Coursera.png",
+          "badge_path": "assets/badges/Coursera.png",
+          "verification_url": "https://www.coursera.org/account/accomplishments/specialization/certificate/JC2QIJQS5B7F",
+          "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
+          "category": "Credentials",
+          "issue_date": "2025-07-10",
+          "credential_id": "JC2QIJQS5B7F",
           "description": "Click to Verify"
         },
         {
