@@ -14,7 +14,6 @@
 #   - LinkedIn: Screenshot from your certification section
 
 certifications:
-  # AWS Certified Certifications
   - title: Python for Data Science and AI
     provider: Coursera (IBM)
     category: Credentials
