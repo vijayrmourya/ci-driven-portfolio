@@ -41,34 +41,13 @@ jobs:
       - name: Commit and push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILES: "assets/certificates.json"
+          COMMIT_MSG_TEMPLATE: "chore: update certificates.json ({COUNT} certificates) [skip ci]"
+          COUNT_CMD: "grep -c '\"title\"' assets/certificates.json || echo 0"
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Add the generated file
-          git add assets/certificates.json
-          
-          # Commit only if there are changes
-          if ! git diff --staged --quiet; then
-            CERT_COUNT=$(grep -c '"title":' assets/certificates.json || echo "0")
-            git commit -m "chore: update certificates.json ($CERT_COUNT certificates) [skip ci]"
-            BRANCH=${GITHUB_REF#refs/heads/}
-            git pull --rebase origin "$BRANCH" || { echo "Remote changed, aborting push"; git rebase --abort || true; exit 0; }
-            git push
-            echo "✅ Changes committed and pushed"
-          else
-            echo "ℹ️ No changes to commit"
-          fi
+          .github/scripts/commit_and_push.sh
 
       - name: Summary
         if: always()
         run: |
-          echo "### 📜 Certificate Generation Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          CERT_COUNT=$(grep -c '"title":' assets/certificates.json 2>/dev/null || echo "0")
-          # ensure CERT_COUNT is defined and numeric
-          CERT_COUNT=${CERT_COUNT:-0}
-          echo "- **Total Certificates**: $CERT_COUNT" >> $GITHUB_STEP_SUMMARY
-          echo "- **Generated**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ✅ Complete" >> $GITHUB_STEP_SUMMARY
+          .github/scripts/certificates_summary.sh assets/certificates.json
