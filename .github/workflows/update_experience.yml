@@ -1,5 +1,9 @@
 name: Generate Experience Page
 
+concurrency:
+  group: portfolio-update-serialize
+  cancel-in-progress: false
+
 on:
   push:
     branches:
@@ -21,7 +25,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -38,20 +43,10 @@ jobs:
           echo "✅ Experience page generated"
 
       - name: Commit and push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILES: "experience.html"
+          COMMIT_MSG_TEMPLATE: "chore: regenerate experience.html ({COUNT} experiences) [skip ci]"
+          COUNT_CMD: "grep -c 'class=\"card company-card\"' experience.html || echo 0"
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Add the generated file
-          git add experience.html
-          
-          # Commit only if there are changes
-          if ! git diff --staged --quiet; then
-            EXP_COUNT=$(grep -c 'class="card company-card"' experience.html || echo "0")
-            git commit -m "chore: regenerate experience.html ($EXP_COUNT experiences) [skip ci]"
-            git push
-            echo "✅ Changes committed and pushed"
-          else
-            echo "ℹ️ No changes to commit"
-          fi
-
+          .github/scripts/commit_and_push.sh
