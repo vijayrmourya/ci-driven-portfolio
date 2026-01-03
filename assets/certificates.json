@@ -1,14 +1,22 @@
 {
-  "last_updated": "2026-01-03T13:51:06.975728",
-  "total_count": 54,
+  "last_updated": "2026-01-03T13:54:17.108918",
+  "total_count": 55,
   "categories": {
     "AWS": {
       "display_name": "AWS",
       "icon": "☁️",
       "color": "#FF9900",
       "description": "AWS training and course certificates",
-      "count": 33,
+      "count": 34,
       "certificates": [
+        {
+          "title": "AWS SimuLearn: Automation with CloudFormation",
+          "provider": "AWS Skill Builder",
+          "filename": "AWS SimuLearn: Automation with CloudFormation.pdf",
+          "path": "assets/certificates/AWS/AWS SimuLearn: Automation with CloudFormation.pdf",
+          "category": "AWS",
+          "completion_date": "2026-01-03"
+        },
         {
           "title": "Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation",
           "provider": "AWS Skill Builder",
