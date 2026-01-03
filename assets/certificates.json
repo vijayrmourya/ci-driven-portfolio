@@ -1,14 +1,22 @@
 {
-  "last_updated": "2026-01-03T08:19:37.872541",
-  "total_count": 53,
+  "last_updated": "2026-01-03T08:21:16.496415",
+  "total_count": 54,
   "categories": {
     "AWS": {
       "display_name": "AWS",
       "icon": "☁️",
       "color": "#FF9900",
       "description": "AWS training and course certificates",
-      "count": 32,
+      "count": 33,
       "certificates": [
+        {
+          "title": "Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation",
+          "provider": "AWS Skill Builder",
+          "filename": "Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation.pdf",
+          "path": "assets/certificates/AWS/Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation.pdf",
+          "category": "AWS",
+          "completion_date": "2026-01-03"
+        },
         {
           "title": "AWS Solutions Architect Advanced - Designing a Multi-Account Architecture",
           "provider": "AWS Skill Builder",
