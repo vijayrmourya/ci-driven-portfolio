@@ -2,6 +2,12 @@
   "source": "https://medium.com/@vjmourya",
   "posts": [
     {
+      "title": "The Agentic Prompting Style Most AI Users Never Learn",
+      "link": "https://medium.com/@vjmourya/the-agentic-prompting-style-most-ai-users-never-learn-7689ee04caaf?source=rss-c49948e7594d------2",
+      "date": "2026-01-15T04:25:56",
+      "excerpt": "<p>A few years ago, a chatbot answered questions.</p><p>Today, that same interface can act like a negotiation coach, a writing editor, a language tutor, or a grant consultant — always available, fast,…"
+    },
+    {
       "title": "Mastering boto3 Authentication in AWS: Sessions, Clients, and Cross-Account Access (and a Sprinkle…",
       "link": "https://medium.com/@vjmourya/mastering-boto3-authentication-in-aws-sessions-clients-and-cross-account-access-and-a-sprinkle-29046f3e6a93?source=rss-c49948e7594d------2",
       "date": "2025-11-15T13:43:51",
@@ -30,12 +36,6 @@
       "link": "https://medium.com/@vjmourya/the-hidden-container-running-in-every-pod-and-why-it-matters-dee12a139145?source=rss-c49948e7594d------2",
       "date": "2025-09-20T17:12:04",
       "excerpt": "<p>“What the Pod!”</p><p>If you’ve spent even a week in Kubernetes land, you’ve probably heard this line: <em>“A Pod is the smallest deployable unit.”</em></p><p>Sounds simple, right? But that sentenc…"
-    },
-    {
-      "title": "What is a JWT? How OIDC Providers Like GitLab/Github Generate Tokens for Pipelines",
-      "link": "https://medium.com/@vjmourya/what-is-a-jwt-how-oidc-providers-like-gitlab-github-generate-tokens-for-pipelines-cf3cbae9fabf?source=rss-c49948e7594d------2",
-      "date": "2025-09-06T12:52:56",
-      "excerpt": "<p>Have you ever copied one of those ridiculously long strings that start with eyJhbGciOi... and wondered:</p><p><em>“What is this thing, and why does AWS or GitLab care so much about it?”</em></p><p>…"
     }
   ]
 }
