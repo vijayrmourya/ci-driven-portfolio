@@ -19,6 +19,7 @@
           "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
           "category": "Credentials",
           "issue_date": "2026-02-05",
+          "expiry_date": "2028-02-06",
           "credential_id": "LF-984czbffez",
           "description": "Click to Verify"
         },
