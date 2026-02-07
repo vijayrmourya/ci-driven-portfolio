@@ -18,24 +18,33 @@ experiences:
     role: Senior DevOps Engineer • Service Owner
     start_date: "2023-07"
     end_date: present
-    duration: 1.5+ years
+    duration: 2.5+ years
     color: "#60a5fa"
     order: 1
 
     projects:
-      - title: "🎯 Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)"
+      - title: "🎯 Agile Delivery Coordinator (Acting Team Lead)"
         highlights:
-          - "Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP"
-          - "Supporting 10+ teams and 1,500+ jobs per release cycle, reducing manual efforts significantly"
+          - "introduced AI tools for Daily Standups and Sprint Planning, as well implemting MCP servers for Jira automation, resulting in 20% reduction in meeting times"
+          - "Directly mentoring 2 new hires along with onboarding, managing their tasks and providing technical guidance"
+          - "Managing Jira board, sprint planning in absence of PM/PO, ensuring smooth team operations and timely delivery of sprint goals of 8 member team"
+          - "Unblocking team members by providing technical support, facilitating cross-team collaboration, and ensuring alignment with project objectives"
+          - "PI planning and backlog grooming sessions with PM/PO to prioritize tasks and plan releases effectively"
+
+      - title: "🎯 [Service Owner] Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)"
+        highlights:
+          - "Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP in kubernetes environments (EKS/GKE) to support CI/CD pipelines for multiple teams"
+          - "Supporting 5+ teams and 2,500+ jobs per release cycle, reducing manual efforts significantly. enabling 30% faster release cycles and reliability improvements"
           - "Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build"
           - "Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration"
           - "Packaged solution as reusable Terraform module for consistent, rapid deployments"
           - "Authored comprehensive architecture and implementation documentation"
           - "Standardized deployment process through IaC, achieving 30% faster delivery, reduced error rates, and cost optimization"
 
-      - title: "⚡ Event-driven AWS Patch Management System"
+      - title: "⚡ [Service Owner] Event-driven multi Account AWS Patch Management System"
         highlights:
           - "Designed and deployed fully automated, event-driven patch management solution for AWS"
+          - "Solution leverages AWS Serverless to patch multiple accounts efficiently, controlling the patch order between dev, staging, and production environments and promoting only tested patches to production"
           - "Patching 500+ EC2 instances monthly, improving security and operational efficiency"
           - "Developed metrics framework (Athena and S3) for actionable insights and BDD enablement"
           - "Presented solution to ~500 attendees at domain-wide event with video tutorial content"
@@ -45,9 +54,9 @@ experiences:
 
       - title: "🚀 Other Key Contributions"
         highlights:
-          - "Mentored junior engineers and led scrum meetings in absence of PM/PO, managing Jira boards"
+          - "proficient in using AI tools like copilot, custom AI agents, and custom scripts to automate routine tasks, enhance documentation, and optimize workflows"
           - "Supported product launch initiatives through technical and business presentations"
-          - "Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources"
+          - "Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources example: unattached EBS volumes and orphaned snapshots"
           - "Deployed SSM document-based automations for configuration compliance and EC2 lifecycle management"
           - "Enhanced hardened machine image (AMI/GCP image) pipelines integrating Ansible playbooks and Packer"
           - "Engineered dynamic, parameterized GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning"
@@ -67,7 +76,7 @@ experiences:
     projects:
       - title: "⚙️ Serverless Ops Engine"
         highlights:
-          - "Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability"
+          - "Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability by processing ~500 tickets monthly"
           - "Designed and implemented high-throughput AWS Lambda workflows to process large-scale CSV/JSON data from S3"
           - "Leveraged asynchronous invocation, file indexing, and function chaining to resolve Lambda timeout constraints and optimize data ingestion into DynamoDB"
           - "Created solution design diagrams with Draw.io and documented implementation with SOP guide books"
@@ -100,7 +109,7 @@ experiences:
       - title: "☁️ On-Prem to Cloud Migration"
         highlights:
           - "Supported cloud migration project by provisioning AWS Compute and Storage resources using Terraform and CloudFormation"
-          - "Automating AMI creation with Packer & Ansible to custom bake tools into servers"
+          - "Automating AMI creation with Packer & Ansible to bake custom tools into servers"
           - "Implemented hybrid infrastructure by integrating on-premises servers with AWS for file sharing (NAS) and establishing secure connectivity"
 
       - title: "🔄 Disaster Recovery & CI/CD"
@@ -125,7 +134,7 @@ achievements:
 
   - icon: "🏆"
     title: Recognition Awards
-    description: Multiple internal recognitions for technical excellence
+    description: 3 internal recognitions/Applause for technical excellence 2024-2025
 
   - icon: "📐"
     title: Architecture Design
@@ -202,7 +211,7 @@ career_stats:
     label: Major Organizations
     color: "#4fd1c5"
 
-  - value: "1,500+"
+  - value: "2,500+"
     label: Jobs per Release Cycle
     color: "#60a5fa"
 
