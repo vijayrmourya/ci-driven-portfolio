@@ -1,227 +1,396 @@
-# Experience Configuration File
-# Last updated: 2025-12-31
-#
-# Instructions:
-#   1. Update existing entries or add new experiences below
-#   2. Run: python3 tools/generate_experience.py
-#   3. The script will automatically update experience.html
-#
-# To add a new experience:
-#   1. Add an entry under 'experiences' with all required fields
-#   2. Add projects/contributions under 'projects' for that experience
-#   3. Run the generation script
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Work Experience — Vijay Mourya</title>
+    <meta name="description" content="Detailed professional experience and career history of Vijay Mourya - Senior DevOps & Infrastructure Reliability Engineer">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="brand">
+            <img src="assets/DP/ProfilePicture.png" alt="VM" class="logo" style="width:56px;height:56px;border-radius:12px;">
+            <div>
+                <div class="title">Vijay Mourya</div>
+                <div class="small">Senior DevOps & Infrastructure Reliability Engineer</div>
+            </div>
+        </div>
 
-experiences:
-  - id: roche
-    company: Roche Information Solutions India
-    location: Pune, India
-    role: Senior DevOps Engineer • Service Owner
-    start_date: "2023-07"
-    end_date: present
-    duration: 2.5+ years
-    color: "#60a5fa"
-    order: 1
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="study.html">Social</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    projects:
-      - title: "🎯 Agile Delivery Coordinator (Acting Team Lead)"
-        highlights:
-          - "introduced AI tools for Daily Standups and Sprint Planning, as well implemting MCP servers for Jira automation, resulting in 20% reduction in meeting times"
-          - "Directly mentoring 2 new hires along with onboarding, managing their tasks and providing technical guidance"
-          - "Managing Jira board, sprint planning in absence of PM/PO, ensuring smooth team operations and timely delivery of sprint goals of 8 member team"
-          - "Unblocking team members by providing technical support, facilitating cross-team collaboration, and ensuring alignment with project objectives"
-          - "PI planning and backlog grooming sessions with PM/PO to prioritize tasks and plan releases effectively"
+        <div class="mobile-menu">
+            <select id="mobile-nav">
+                <option value="index.html">Home</option>
+                <option value="services.html">Services</option>
+                <option selected value="experience.html">Experience</option>
+                <option value="projects.html">Projects</option>
+                <option value="certifications.html">Certifications</option>
+                <option value="study.html">Social</option>
+                <option value="contact.html">Contact</option>
+            </select>
+        </div>
+    </header>
 
-      - title: "🎯 [Service Owner] Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)"
-        highlights:
-          - "Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP in kubernetes environments (EKS/GKE) to support CI/CD pipelines for multiple teams"
-          - "Supporting 5+ teams and 2,500+ jobs per release cycle, reducing manual efforts significantly. enabling 30% faster release cycles and reliability improvements"
-          - "Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build"
-          - "Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration"
-          - "Packaged solution as reusable Terraform module for consistent, rapid deployments"
-          - "Authored comprehensive architecture and implementation documentation"
-          - "Standardized deployment process through IaC, achieving 30% faster delivery, reduced error rates, and cost optimization"
+    <main>
+        <section class="card" style="padding:20px; margin-bottom:24px;">
+            <h1 style="margin:0 0 8px 0; font-size:1.8rem;">Professional Experience</h1>
+            <p class="small" style="margin:0;">6+ years building reliable cloud infrastructure and DevOps platforms across AWS, GCP, Kubernetes, and production-grade CI/CD pipelines.</p>
+        </section>
 
-      - title: "⚡ [Service Owner] Event-driven multi Account AWS Patch Management System"
-        highlights:
-          - "Designed and deployed fully automated, event-driven patch management solution for AWS"
-          - "Solution leverages AWS Serverless to patch multiple accounts efficiently, controlling the patch order between dev, staging, and production environments and promoting only tested patches to production"
-          - "Patching 500+ EC2 instances monthly, improving security and operational efficiency"
-          - "Developed metrics framework (Athena and S3) for actionable insights and BDD enablement"
-          - "Presented solution to ~500 attendees at domain-wide event with video tutorial content"
-          - "Authored technical documentation, troubleshooting SOPs, and system architecture diagrams (Lucid)"
-          - "Implemented CI/CD pipeline for serverless deployments with TDD practices (unit & integration tests)"
-          - "Recognized for optimizing patch management, reducing manual intervention, operational costs, and improving infrastructure security"
+        <!-- ============================================ -->
+        <!-- ACHIEVEMENTS & RECOGNITION -->
+        <!-- ============================================ -->
+        <section class="section">
+            <h2>Recent Achievements & Highlights</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
 
-      - title: "🚀 Other Key Contributions"
-        highlights:
-          - "proficient in using AI tools like copilot, custom AI agents, and custom scripts to automate routine tasks, enhance documentation, and optimize workflows"
-          - "Supported product launch initiatives through technical and business presentations"
-          - "Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources example: unattached EBS volumes and orphaned snapshots"
-          - "Deployed SSM document-based automations for configuration compliance and EC2 lifecycle management"
-          - "Enhanced hardened machine image (AMI/GCP image) pipelines integrating Ansible playbooks and Packer"
-          - "Engineered dynamic, parameterized GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning"
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">🎤</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">Live Service Presentation</h3>
+                    <p class="small">
+                        Conducted live presentation and demonstration of service release to 500+ internal team members at Roche
+                    </p>
+                </div>
 
-    tech_stack: "AWS (EKS, Lambda, EventBridge, Systems Manager, CodePipeline, Athena, S3) • GCP (GKE, Cloud Build) • Kubernetes • Terraform • GitLab CI/CD • Helm • Packer • Ansible • Docker • Python • Jinja2 • Bash • Lucid/Draw.io"
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">🌐</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">KubeCon + CloudNativeCon 2024</h3>
+                    <p class="small">
+                        Attended KubeCon + CloudNativeCon India 2024, Hyderabad - staying current with cloud-native technologies
+                    </p>
+                </div>
 
-  - id: amazon
-    company: Amazon Development Centre India
-    location: Hyderabad, India
-    role: DevOps Engineer • On-Call PoC
-    start_date: "2022-04"
-    end_date: "2023-06"
-    duration: 1 year 3 months
-    color: "#60a5fa"
-    order: 2
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">☁️</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">AWS re:Invent 2024</h3>
+                    <p class="small">
+                        Attended AWS re:Invent 2024, Las Vegas - learning latest AWS innovations and best practices
+                    </p>
+                </div>
 
-    projects:
-      - title: "⚙️ Serverless Ops Engine"
-        highlights:
-          - "Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability by processing ~500 tickets monthly"
-          - "Designed and implemented high-throughput AWS Lambda workflows to process large-scale CSV/JSON data from S3"
-          - "Leveraged asynchronous invocation, file indexing, and function chaining to resolve Lambda timeout constraints and optimize data ingestion into DynamoDB"
-          - "Created solution design diagrams with Draw.io and documented implementation with SOP guide books"
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">🏆</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">Internal Recognition</h3>
+                    <p class="small">
+                        Multiple internal recognitions for outstanding contributions and technical excellence
+                    </p>
+                </div>
 
-      - title: "🚨 On-Call & Incident Management"
-        highlights:
-          - "As Service PoC on call, authored detailed technical documentation, SOPs, and mitigation playbooks, significantly reducing recurring incidents and expediting team onboarding"
-          - "Managed high-severity incidents as primary on-call engineer, implementing mitigation strategies, root cause analyses, and proactive monitoring to minimize customer impact and prevent recurrence"
-          - "Contributed to KPI-driven monitoring and alerting efforts where within team I played key role in identifying KPIs to monitor & alert teams on any anomalies"
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">📐</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">Service Design Expert</h3>
+                    <p class="small">
+                        Specialized in service architecture design and comprehensive design document drafting
+                    </p>
+                </div>
 
-      - title: "🔄 HTTP(S) VIP Migration Project"
-        highlights:
-          - "Contributed in HTTP(s) VIP migration project, transitioning infrastructure from NetScaler to AWS native load balancers (ALB/NLB)"
-          - "Developed comprehensive migration, rollback, and automation strategies, including IAM role design, prerequisite validation, and migration timeline planning"
-          - "Collaborated with globally distributed teams, contributing to system design reviews and code quality assurance to ensure robust, production-ready deliverables"
+                <div class="card" style="padding:15px; background: linear-gradient(135deg, rgba(96,165,250,0.08), rgba(79,209,197,0.05));">
+                    <div style="font-size:1.5rem; margin-bottom:10px;">📚</div>
+                    <h3 style="margin:0 0 8px 0; font-size:1.1rem;">Documentation Excellence</h3>
+                    <p class="small">
+                        Extensive experience creating detailed service documentation and technical runbooks
+                    </p>
+                </div>
 
-    tech_stack: "AWS (Lambda, S3, DynamoDB, ALB/NLB, CloudWatch, SNS, SQS) • Python • Draw.io • On-Call Operations • Root Cause Analysis"
+            </div>
+        </section>
 
-  - id: tcs
-    company: Tata Consultancy Services Limited
-    location: Nagpur, India
-    role: DevOps Engineer
-    start_date: "2019-07"
-    end_date: "2022-03"
-    duration: 2 years 9 months
-    color: "#60a5fa"
-    order: 3
 
-    projects:
-      - title: "☁️ On-Prem to Cloud Migration"
-        highlights:
-          - "Supported cloud migration project by provisioning AWS Compute and Storage resources using Terraform and CloudFormation"
-          - "Automating AMI creation with Packer & Ansible to bake custom tools into servers"
-          - "Implemented hybrid infrastructure by integrating on-premises servers with AWS for file sharing (NAS) and establishing secure connectivity"
+        <!-- ============================================ -->
+        <!-- DETAILED WORK EXPERIENCE - VERTICAL TIMELINE -->
+        <!-- ============================================ -->
+        <section class="section" style="margin-top:32px;">
+            <h2>Career Timeline</h2>
+            <p class="small" style="margin-bottom:24px; color:var(--muted);">Detailed work experience in chronological order (most recent first)</p>
 
-      - title: "🔄 Disaster Recovery & CI/CD"
-        highlights:
-          - "Engineered \"point in time\" disaster recovery solutions, automating failover with Jenkins jobs triggered by SQS and developing Lambda-based monitoring and recovery actions"
-          - "Managed & Supported robust CI/CD pipelines in Jenkins for microservices and MFEs, leveraging shared libraries, multibranch pipelines, and integration with AWS CLI, SSM, and Lambda triggers"
 
-      - title: "📊 Infrastructure & Operations"
-        highlights:
-          - "Automated infrastructure monitoring and alerting using CloudWatch, SNS, and Lambda, ensuring high availability and incident response"
-          - "Deployed and managed containerized applications with Docker and Kubernetes, supporting microservices and troubleshooting pod deployments"
-          - "Collaborated with clients and internal teams to provide project updates, conduct infrastructure knowledge transfer, and deliver disaster recovery planning and documentation"
-          - "Contributed to documentation and SOPs to streamline operations, improve onboarding, and standardize change management processes"
+            <!-- Roche Information Solutions India -->
+            <div class="card company-card" style="padding:24px; margin-bottom:20px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                    <div>
+                        <h3 style="margin:0; color:#60a5fa; font-size:1.3rem;">Roche Information Solutions India</h3>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">Pune, India</div>
+                    </div>
+                    <div style="text-align:right;">
+                        <div class="label" style="display:inline-block; padding:4px 12px; background:rgba(96,165,250,0.15); border-radius:20px;">Jul 2023 – Present</div>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">1.5+ years</div>
+                    </div>
+                </div>
 
-    tech_stack: "AWS (EC2, S3, CloudWatch, SNS, SQS, Lambda) • Terraform • CloudFormation • Jenkins • Packer • Ansible • Docker • Kubernetes • Python • Bash"
+                <strong style="display:block; margin-bottom:16px; color:#e6eef8; font-size:1.05rem;">Senior DevOps Engineer • Service Owner</strong>
 
-# Achievements Section
-achievements:
-  - icon: "🎤"
-    title: Live Presentation
-    description: Presented service release to 500+ team members at Roche
 
-  - icon: "🏆"
-    title: Recognition Awards
-    description: 3 internal recognitions/Applause for technical excellence 2024-2025
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">🎯 Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP</li>
+                        <li>Supporting 10+ teams and 1,500+ jobs per release cycle, reducing manual efforts significantly</li>
+                        <li>Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build</li>
+                        <li>Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration</li>
+                        <li>Packaged solution as reusable Terraform module for consistent, rapid deployments</li>
+                        <li>Authored comprehensive architecture and implementation documentation</li>
+                        <li>Standardized deployment process through IaC, achieving 30% faster delivery, reduced error rates, and cost optimization</li>
+                    </ul>
+                </div>
 
-  - icon: "📐"
-    title: Architecture Design
-    description: Service architecture design and comprehensive documentation
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">⚡ Event-driven AWS Patch Management System</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Designed and deployed fully automated, event-driven patch management solution for AWS</li>
+                        <li>Patching 500+ EC2 instances monthly, improving security and operational efficiency</li>
+                        <li>Developed metrics framework (Athena and S3) for actionable insights and BDD enablement</li>
+                        <li>Presented solution to ~500 attendees at domain-wide event with video tutorial content</li>
+                        <li>Authored technical documentation, troubleshooting SOPs, and system architecture diagrams (Lucid)</li>
+                        <li>Implemented CI/CD pipeline for serverless deployments with TDD practices (unit & integration tests)</li>
+                        <li>Recognized for optimizing patch management, reducing manual intervention, operational costs, and improving infrastructure security</li>
+                    </ul>
+                </div>
 
-  - icon: "📚"
-    title: Documentation
-    description: Extensive technical documentation and SOPs
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">🚀 Other Key Contributions</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Mentored junior engineers and led scrum meetings in absence of PM/PO, managing Jira boards</li>
+                        <li>Supported product launch initiatives through technical and business presentations</li>
+                        <li>Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources</li>
+                        <li>Deployed SSM document-based automations for configuration compliance and EC2 lifecycle management</li>
+                        <li>Enhanced hardened machine image (AMI/GCP image) pipelines integrating Ansible playbooks and Packer</li>
+                        <li>Engineered dynamic, parameterized GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning</li>
+                    </ul>
+                </div>
 
-# Conferences
-conferences:
-  - name: KubeCon + CloudNativeCon
-    icon: "🌐"
-    location: India 2024 • Hyderabad
+                <div style="padding-top:12px; border-top:1px solid rgba(255,255,255,0.1);">
+                    <strong class="small">Tech Stack:</strong>
+                    <div class="small" style="margin-top:6px; color:#94a3b8;">
+                        AWS (EKS, Lambda, EventBridge, Systems Manager, CodePipeline, Athena, S3) • GCP (GKE, Cloud Build) • Kubernetes • Terraform • GitLab CI/CD • Helm • Packer • Ansible • Docker • Python • Jinja2 • Bash • Lucid/Draw.io
+                    </div>
+                </div>
+            </div>
 
-  - name: AWS re:Invent
-    icon: "☁️"
-    location: 2024 • Las Vegas, USA
+            <!-- Amazon Development Centre India -->
+            <div class="card company-card" style="padding:24px; margin-bottom:20px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                    <div>
+                        <h3 style="margin:0; color:#60a5fa; font-size:1.3rem;">Amazon Development Centre India</h3>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">Hyderabad, India</div>
+                    </div>
+                    <div style="text-align:right;">
+                        <div class="label" style="display:inline-block; padding:4px 12px; background:rgba(96,165,250,0.15); border-radius:20px;">Apr 2022 – Jun 2023</div>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">1 year 3 months</div>
+                    </div>
+                </div>
 
-# Skills
-skills:
-  - category: "☁️ Cloud Platforms"
-    items:
-      - "<strong>AWS:</strong> EC2, EKS, Lambda, S3, DynamoDB, EventBridge, Systems Manager, CloudFormation, CloudWatch"
-      - "<strong>GCP:</strong> GKE, Compute Engine, Cloud Functions, Cloud Storage"
-      - "Multi-cloud architecture & cost optimization"
+                <strong style="display:block; margin-bottom:16px; color:#e6eef8; font-size:1.05rem;">DevOps Engineer • On-Call PoC</strong>
 
-  - category: "🏗️ Infrastructure as Code"
-    items:
-      - "Terraform (modules, remote state, workspaces)"
-      - "Ansible (playbooks, roles, vault)"
-      - "Packer (AMI/image building)"
-      - "Helm (chart development & management)"
-      - "CloudFormation"
 
-  - category: "🚀 CI/CD & DevOps"
-    items:
-      - "GitLab CI/CD (runners, pipelines, GitOps)"
-      - "Jenkins (pipelines, plugins, distributed builds)"
-      - "GitHub Actions"
-      - "ArgoCD / GitOps practices"
-      - "Security scanning (Trivy, SonarQube)"
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">⚙️ Serverless Ops Engine</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability</li>
+                        <li>Designed and implemented high-throughput AWS Lambda workflows to process large-scale CSV/JSON data from S3</li>
+                        <li>Leveraged asynchronous invocation, file indexing, and function chaining to resolve Lambda timeout constraints and optimize data ingestion into DynamoDB</li>
+                        <li>Created solution design diagrams with Draw.io and documented implementation with SOP guide books</li>
+                    </ul>
+                </div>
 
-  - category: "🐳 Containers & Orchestration"
-    items:
-      - "Kubernetes (EKS, GKE, on-prem)"
-      - "Docker (multi-stage builds, optimization)"
-      - "Container security & best practices"
-      - "Service mesh (exploring Istio)"
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">🚨 On-Call & Incident Management</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>As Service PoC on call, authored detailed technical documentation, SOPs, and mitigation playbooks, significantly reducing recurring incidents and expediting team onboarding</li>
+                        <li>Managed high-severity incidents as primary on-call engineer, implementing mitigation strategies, root cause analyses, and proactive monitoring to minimize customer impact and prevent recurrence</li>
+                        <li>Contributed to KPI-driven monitoring and alerting efforts where within team I played key role in identifying KPIs to monitor & alert teams on any anomalies</li>
+                    </ul>
+                </div>
 
-  - category: "📊 Observability & Monitoring"
-    items:
-      - "Prometheus & Grafana"
-      - "CloudWatch (metrics, logs, alarms)"
-      - "ELK Stack (Elasticsearch, Logstash, Kibana)"
-      - "Distributed tracing & APM"
-      - "SRE practices & SLA/SLO management"
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">🔄 HTTP(S) VIP Migration Project</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Contributed in HTTP(s) VIP migration project, transitioning infrastructure from NetScaler to AWS native load balancers (ALB/NLB)</li>
+                        <li>Developed comprehensive migration, rollback, and automation strategies, including IAM role design, prerequisite validation, and migration timeline planning</li>
+                        <li>Collaborated with globally distributed teams, contributing to system design reviews and code quality assurance to ensure robust, production-ready deliverables</li>
+                    </ul>
+                </div>
 
-  - category: "💻 Programming & Scripting"
-    items:
-      - "Python (automation, serverless, data processing)"
-      - "Bash/Shell scripting"
-      - "Go (learning for tooling)"
-      - "SQL (Athena, DynamoDB queries)"
-      - "YAML, JSON, HCL"
+                <div style="padding-top:12px; border-top:1px solid rgba(255,255,255,0.1);">
+                    <strong class="small">Tech Stack:</strong>
+                    <div class="small" style="margin-top:6px; color:#94a3b8;">
+                        AWS (Lambda, S3, DynamoDB, ALB/NLB, CloudWatch, SNS, SQS) • Python • Draw.io • On-Call Operations • Root Cause Analysis
+                    </div>
+                </div>
+            </div>
 
-# Career highlights stats
-career_stats:
-  - value: "6+"
-    label: Years of Experience
-    color: "#60a5fa"
+            <!-- Tata Consultancy Services Limited -->
+            <div class="card company-card" style="padding:24px; margin-bottom:20px;">
+                <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                    <div>
+                        <h3 style="margin:0; color:#60a5fa; font-size:1.3rem;">Tata Consultancy Services Limited</h3>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">Nagpur, India</div>
+                    </div>
+                    <div style="text-align:right;">
+                        <div class="label" style="display:inline-block; padding:4px 12px; background:rgba(96,165,250,0.15); border-radius:20px;">Jul 2019 – Mar 2022</div>
+                        <div class="small" style="margin-top:4px; color:var(--muted);">2 years 9 months</div>
+                    </div>
+                </div>
 
-  - value: "3"
-    label: Major Organizations
-    color: "#4fd1c5"
+                <strong style="display:block; margin-bottom:16px; color:#e6eef8; font-size:1.05rem;">DevOps Engineer</strong>
 
-  - value: "2,500+"
-    label: Jobs per Release Cycle
-    color: "#60a5fa"
 
-  - value: "$10K+"
-    label: Monthly Cost Savings
-    color: "#4fd1c5"
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">☁️ On-Prem to Cloud Migration</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Supported cloud migration project by provisioning AWS Compute and Storage resources using Terraform and CloudFormation</li>
+                        <li>Automating AMI creation with Packer & Ansible to custom bake tools into servers</li>
+                        <li>Implemented hybrid infrastructure by integrating on-premises servers with AWS for file sharing (NAS) and establishing secure connectivity</li>
+                    </ul>
+                </div>
 
-# Page metadata
-metadata:
-  page_title: "Work Experience — Vijay Mourya"
-  hero_title: "Professional Experience"
-  hero_subtitle: "6+ years building reliable cloud infrastructure and DevOps platforms across AWS, GCP, Kubernetes, and production-grade CI/CD pipelines."
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">🔄 Disaster Recovery & CI/CD</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Engineered "point in time" disaster recovery solutions, automating failover with Jenkins jobs triggered by SQS and developing Lambda-based monitoring and recovery actions</li>
+                        <li>Managed & Supported robust CI/CD pipelines in Jenkins for microservices and MFEs, leveraging shared libraries, multibranch pipelines, and integration with AWS CLI, SSM, and Lambda triggers</li>
+                    </ul>
+                </div>
 
+                <div style="margin-bottom:16px;">
+                    <strong class="small" style="color:#4fd1c5; font-size:0.95rem;">📊 Infrastructure & Operations</strong>
+                    <ul class="small" style="margin:8px 0 0 20px; line-height:1.7;">
+                        <li>Automated infrastructure monitoring and alerting using CloudWatch, SNS, and Lambda, ensuring high availability and incident response</li>
+                        <li>Deployed and managed containerized applications with Docker and Kubernetes, supporting microservices and troubleshooting pod deployments</li>
+                        <li>Collaborated with clients and internal teams to provide project updates, conduct infrastructure knowledge transfer, and deliver disaster recovery planning and documentation</li>
+                        <li>Contributed to documentation and SOPs to streamline operations, improve onboarding, and standardize change management processes</li>
+                    </ul>
+                </div>
+
+                <div style="padding-top:12px; border-top:1px solid rgba(255,255,255,0.1);">
+                    <strong class="small">Tech Stack:</strong>
+                    <div class="small" style="margin-top:6px; color:#94a3b8;">
+                        AWS (EC2, S3, CloudWatch, SNS, SQS, Lambda) • Terraform • CloudFormation • Jenkins • Packer • Ansible • Docker • Kubernetes • Python • Bash
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SKILLS BREAKDOWN -->
+        <!-- ============================================ -->
+        <section class="section" style="margin-top:40px;">
+            <h2>Complete Technical Skillset</h2>
+
+            <div class="grid" style="gap:16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">☁️ Cloud Platforms</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li><strong>AWS:</strong> EC2, EKS, Lambda, S3, DynamoDB, EventBridge, Systems Manager, CloudFormation, CloudWatch</li>
+                        <li><strong>GCP:</strong> GKE, Compute Engine, Cloud Functions, Cloud Storage</li>
+                        <li>Multi-cloud architecture & cost optimization</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">🏗️ Infrastructure as Code</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li>Terraform (modules, remote state, workspaces)</li>
+                        <li>Ansible (playbooks, roles, vault)</li>
+                        <li>Packer (AMI/image building)</li>
+                        <li>Helm (chart development & management)</li>
+                        <li>CloudFormation</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">🚀 CI/CD & DevOps</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li>GitLab CI/CD (runners, pipelines, GitOps)</li>
+                        <li>Jenkins (pipelines, plugins, distributed builds)</li>
+                        <li>GitHub Actions</li>
+                        <li>ArgoCD / GitOps practices</li>
+                        <li>Security scanning (Trivy, SonarQube)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">🐳 Containers & Orchestration</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li>Kubernetes (EKS, GKE, on-prem)</li>
+                        <li>Docker (multi-stage builds, optimization)</li>
+                        <li>Container security & best practices</li>
+                        <li>Service mesh (exploring Istio)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">📊 Observability & Monitoring</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li>Prometheus & Grafana</li>
+                        <li>CloudWatch (metrics, logs, alarms)</li>
+                        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                        <li>Distributed tracing & APM</li>
+                        <li>SRE practices & SLA/SLO management</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding:20px;">
+                    <h3 style="margin:0 0 12px 0; font-size:1.1rem;">💻 Programming & Scripting</h3>
+                    <ul class="small" style="margin:0; padding-left:20px; line-height:1.8;">
+                        <li>Python (automation, serverless, data processing)</li>
+                        <li>Bash/Shell scripting</li>
+                        <li>Go (learning for tooling)</li>
+                        <li>SQL (Athena, DynamoDB queries)</li>
+                        <li>YAML, JSON, HCL</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CAREER SUMMARY STATS -->
+        <!-- ============================================ -->
+        <section class="section" style="margin-top:40px;">
+            <h2>Career Highlights</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:16px;">
+
+                <div class="card" style="padding:20px; text-align:center;">
+                    <div style="font-size:2.5rem; font-weight:700; color:#60a5fa;">6+</div>
+                    <div class="small">Years of Experience</div>
+                </div>
+
+                <div class="card" style="padding:20px; text-align:center;">
+                    <div style="font-size:2.5rem; font-weight:700; color:#4fd1c5;">3</div>
+                    <div class="small">Major Organizations</div>
+                </div>
+
+                <div class="card" style="padding:20px; text-align:center;">
+                    <div style="font-size:2.5rem; font-weight:700; color:#60a5fa;">1,500+</div>
+                    <div class="small">Jobs per Release Cycle</div>
+                </div>
+
+                <div class="card" style="padding:20px; text-align:center;">
+                    <div style="font-size:2.5rem; font-weight:700; color:#4fd1c5;">$10K+</div>
+                    <div class="small">Monthly Cost Savings</div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="small">© Vijay Mourya — Built with GitHub Pages</div>
+        </footer>
+    </main>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
