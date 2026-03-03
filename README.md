@@ -156,4 +156,3 @@ env:
 ---
 
 **Built with HTML, CSS, JavaScript, Python & GitHub Actions**
-
