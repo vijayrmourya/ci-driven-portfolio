@@ -13,6 +13,34 @@
 #   3. Run the generation script
 
 certificates:
+- title: "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR"
+  number: "59"
+  provider: AWS Skill Builder
+  category: AWS
+  filename: "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf"
+  completion_date: '2026-03-03'
+  verification_url: ''
+- title: "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling"
+  number: "58"
+  provider: AWS Skill Builder
+  category: AWS
+  filename: "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf"
+  completion_date: '2026-03-03'
+  verification_url: ''
+- title: "AWS ML Engineer Associate 1.2 Transform Data"
+  number: "57"
+  provider: AWS Skill Builder
+  category: AWS
+  filename: "AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf"
+  completion_date: '2026-03-01'
+  verification_url: ''
+- title: "AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data"
+  number: "56"
+  provider: AWS Skill Builder
+  category: AWS
+  filename: "AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf"
+  completion_date: '2026-02-22'
+  verification_url: ''
 - title: "AWS SimuLearn: Automation with CloudFormation"
   number: "55"
   provider: AWS Skill Builder
