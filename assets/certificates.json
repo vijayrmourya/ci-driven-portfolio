@@ -1,46 +1,143 @@
 {
-  "last_updated": "2026-03-03T15:27:12.740827",
+  "last_updated": "2026-03-03T15:33:27.763919",
   "total_count": 59,
   "categories": {
-    "AWS": {
-      "display_name": "AWS",
-      "icon": "☁️",
-      "color": "#FF9900",
-      "description": "AWS training and course certificates",
-      "count": 38,
+    "AI-ML": {
+      "display_name": "AI & Machine Learning",
+      "icon": "🤖",
+      "color": "#8B5CF6",
+      "description": "Artificial Intelligence and Machine Learning",
+      "count": 15,
       "certificates": [
         {
           "title": "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR",
           "provider": "AWS Skill Builder",
           "filename": "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf",
-          "path": "assets/certificates/AWS/Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf",
-          "category": "AWS",
+          "path": "assets/certificates/AI-ML/Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf",
+          "category": "AI-ML",
           "completion_date": "2026-03-03"
         },
         {
           "title": "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling",
           "provider": "AWS Skill Builder",
           "filename": "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf",
-          "path": "assets/certificates/AWS/AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf",
-          "category": "AWS",
+          "path": "assets/certificates/AI-ML/AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf",
+          "category": "AI-ML",
           "completion_date": "2026-03-03"
         },
         {
           "title": "AWS ML Engineer Associate 1.2 Transform Data",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf",
-          "path": "assets/certificates/AWS/AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf",
-          "category": "AWS",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf",
+          "category": "AI-ML",
           "completion_date": "2026-03-01"
         },
         {
           "title": "AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data",
           "provider": "AWS Skill Builder",
           "filename": "AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf",
-          "path": "assets/certificates/AWS/AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf",
-          "category": "AWS",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf",
+          "category": "AI-ML",
           "completion_date": "2026-02-22"
         },
+        {
+          "title": "Security, Compliance, and Governance for AI Solutions",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-25"
+        },
+        {
+          "title": "AWS Artificial Intelligence Practitioner Learning Plan",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-25"
+        },
+        {
+          "title": "Essentials of Prompt Engineering",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-25"
+        },
+        {
+          "title": "Optimizing Foundation Models",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Optimizing Foundation Models.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Optimizing Foundation Models.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-25"
+        },
+        {
+          "title": "Developing Generative Artificial Intelligence Solutions",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-24"
+        },
+        {
+          "title": "Developing Machine Learning Solutions",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-24"
+        },
+        {
+          "title": "Exploring Artificial Intelligence Use Cases and Applications",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-19"
+        },
+        {
+          "title": "Fundamentals of Machine Learning and Artificial Intelligence",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
+          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-12-19"
+        },
+        {
+          "title": "AWS Cloud Quest - Generative AI Practitioner",
+          "provider": "AWS Skill Builder",
+          "filename": "AWS Cloud Quest - Generative AI Practitioner.pdf",
+          "path": "assets/certificates/AI-ML/AWS Cloud Quest - Generative AI Practitioner.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-11-15"
+        },
+        {
+          "title": "Official Practice Question Set - AWS Certified AI Practitioner",
+          "provider": "AWS Skill Builder",
+          "filename": "Official Practice Question Set - AWS Certified AI Practitioner.pdf",
+          "path": "assets/certificates/AI-ML/Official Practice Question Set - AWS Certified AI Practitioner.pdf",
+          "category": "AI-ML",
+          "completion_date": "2025-11-09"
+        },
+        {
+          "title": "AWS Machine Learning Foundations 2022",
+          "provider": "Udacity",
+          "filename": "Udacity-AWS-Machine-Learning-Foundations-2022.pdf",
+          "path": "assets/certificates/AI-ML/Udacity-AWS-Machine-Learning-Foundations-2022.pdf",
+          "category": "AI-ML",
+          "completion_date": "2022-09-01"
+        }
+      ]
+    },
+    "AWS": {
+      "display_name": "AWS",
+      "icon": "☁️",
+      "color": "#FF9900",
+      "description": "AWS training and course certificates",
+      "count": 34,
+      "certificates": [
         {
           "title": "AWS SimuLearn: Automation with CloudFormation",
           "provider": "AWS Skill Builder",
@@ -312,103 +409,6 @@
           "path": "assets/certificates/AWS/AWSSkillBuilder-AWS Cloud Practitioner Essentials - AWS Course Completion.pdf",
           "category": "AWS",
           "completion_date": "2022-05-24"
-        }
-      ]
-    },
-    "AI-ML": {
-      "display_name": "AI & Machine Learning",
-      "icon": "🤖",
-      "color": "#8B5CF6",
-      "description": "Artificial Intelligence and Machine Learning",
-      "count": 11,
-      "certificates": [
-        {
-          "title": "Security, Compliance, and Governance for AI Solutions",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder-Security, Compliance, and Governance for AI Solutions.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-25"
-        },
-        {
-          "title": "AWS Artificial Intelligence Practitioner Learning Plan",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_AWS Artificial Intelligence Practitioner Learning Plan.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-25"
-        },
-        {
-          "title": "Essentials of Prompt Engineering",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Essentials of Prompt Engineering.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-25"
-        },
-        {
-          "title": "Optimizing Foundation Models",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Optimizing Foundation Models.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Optimizing Foundation Models.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-25"
-        },
-        {
-          "title": "Developing Generative Artificial Intelligence Solutions",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Developing Generative Artificial Intelligence Solutions.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-24"
-        },
-        {
-          "title": "Developing Machine Learning Solutions",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Developing Machine Learning Solutions.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-24"
-        },
-        {
-          "title": "Exploring Artificial Intelligence Use Cases and Applications",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Exploring Artificial Intelligence Use Cases and Applications.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-19"
-        },
-        {
-          "title": "Fundamentals of Machine Learning and Artificial Intelligence",
-          "provider": "AWS Skill Builder",
-          "filename": "AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
-          "path": "assets/certificates/AI-ML/AWSSkillBuilder_Fundamentals of Machine Learning and Artificial Intelligence.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-12-19"
-        },
-        {
-          "title": "AWS Cloud Quest - Generative AI Practitioner",
-          "provider": "AWS Skill Builder",
-          "filename": "AWS Cloud Quest - Generative AI Practitioner.pdf",
-          "path": "assets/certificates/AI-ML/AWS Cloud Quest - Generative AI Practitioner.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-11-15"
-        },
-        {
-          "title": "Official Practice Question Set - AWS Certified AI Practitioner",
-          "provider": "AWS Skill Builder",
-          "filename": "Official Practice Question Set - AWS Certified AI Practitioner.pdf",
-          "path": "assets/certificates/AI-ML/Official Practice Question Set - AWS Certified AI Practitioner.pdf",
-          "category": "AI-ML",
-          "completion_date": "2025-11-09"
-        },
-        {
-          "title": "AWS Machine Learning Foundations 2022",
-          "provider": "Udacity",
-          "filename": "Udacity-AWS-Machine-Learning-Foundations-2022.pdf",
-          "path": "assets/certificates/AI-ML/Udacity-AWS-Machine-Learning-Foundations-2022.pdf",
-          "category": "AI-ML",
-          "completion_date": "2022-09-01"
         }
       ]
     },
