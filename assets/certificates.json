@@ -1,14 +1,46 @@
 {
-  "last_updated": "2026-03-03T04:59:37.260144",
-  "total_count": 55,
+  "last_updated": "2026-03-03T15:21:01.519524",
+  "total_count": 59,
   "categories": {
     "AWS": {
       "display_name": "AWS",
       "icon": "☁️",
       "color": "#FF9900",
       "description": "AWS training and course certificates",
-      "count": 34,
+      "count": 38,
       "certificates": [
+        {
+          "title": "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR",
+          "provider": "AWS Skill Builder",
+          "filename": "Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf",
+          "path": "assets/certificates/AWS/Lab - Analyze and Prepare Data with Amazon SageMaker Data Wrangler and Amazon EMR.pdf",
+          "category": "AWS",
+          "completion_date": "2026-03-03"
+        },
+        {
+          "title": "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling",
+          "provider": "AWS Skill Builder",
+          "filename": "AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf",
+          "path": "assets/certificates/AWS/AWS ML Engineer Associate 1.3 Validate Data and Prepare for Modeling.pdf",
+          "category": "AWS",
+          "completion_date": "2026-03-03"
+        },
+        {
+          "title": "AWS ML Engineer Associate 1.2 Transform Data",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf",
+          "path": "assets/certificates/AWS/AWSSkillBuilder_AWS ML Engineer Associate 1.2 Transform Data.pdf",
+          "category": "AWS",
+          "completion_date": "2026-03-01"
+        },
+        {
+          "title": "AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data",
+          "provider": "AWS Skill Builder",
+          "filename": "AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf",
+          "path": "assets/certificates/AWS/AWSSkillBuilder_AWS ML Engineer Associate 1.1 Collect, Ingest, and Store Data.pdf",
+          "category": "AWS",
+          "completion_date": "2026-02-22"
+        },
         {
           "title": "AWS SimuLearn: Automation with CloudFormation",
           "provider": "AWS Skill Builder",
