@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About & Services — Vijay Mourya</title>
+  <meta name="description" content="Professional experience, services, and background of Vijay Mourya - Senior DevOps & Infrastructure Reliability Engineer">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="assets/profile.svg" alt="VM" class="logo" style="width:56px;height:56px;border-radius:12px;">
+        <div>
+          <div class="title">Vijay Mourya</div>
+          <div class="small">Senior DevOps & Infra Reliability Engineer</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="study.html">Social</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="mobile-menu">
+        <select id="mobile-nav">
+          <option value="index.html">Home</option>
+          <option selected value="about.html">About</option>
+          <option value="projects.html">Projects</option>
+          <option value="certifications.html">Certifications</option>
+          <option value="study.html">Social</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <section class="card hero-card">
+        <h1>About & Professional Experience</h1>
+        <p class="small">I build reliable, automated infrastructure for cloud and edge use-cases. With 6+ years of hands-on experience in AWS, GCP, Terraform, Kubernetes (EKS/GKE), and production-grade CI/CD pipelines, I specialize in transforming complex systems into scalable, maintainable platforms.</p>
+
+        <div class="section">
+          <h2>Work Experience</h2>
+          <div class="grid companies-grid" style="grid-template-columns:1fr">
+            <div class="card company-card">
+              <div class="kv">Roche Information Solutions India</div>
+              <div class="small" style="margin-top:8px">
+                <strong>Senior DevOps Engineer • Service Owner</strong><br>
+                July 2023 – Present, Pune<br><br>
+
+                <strong>Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)</strong><br>
+                • Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP<br>
+                • Supporting 10+ teams and 1,500+ jobs per release cycle, reducing manual efforts significantly<br>
+                • Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build<br>
+                • Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration<br>
+                • Packaged solution as reusable Terraform module for consistent, rapid deployments<br>
+                • Standardized deployment process through IaC, achieving 30% faster delivery and reduced error rates<br><br>
+
+                <strong>Event-driven AWS Patch Management System</strong><br>
+                • Designed and deployed fully automated, event-driven patch management solution for AWS<br>
+                • Patching 500+ EC2 instances monthly, improving security and operational efficiency<br>
+                • Developed metrics framework (Athena and S3) for actionable insights and BDD enablement<br>
+                • Presented solution to ~500 attendees at domain-wide event with video tutorial content<br>
+                • Implemented CI/CD pipeline for serverless deployments with TDD practices (unit & integration tests)<br>
+                • Recognized for optimizing patch management, reducing costs and improving infrastructure security<br><br>
+
+                <strong>Other Key Contributions</strong><br>
+                • Mentored junior engineers and led scrum meetings in absence of PM/PO<br>
+                • Implemented AWS cost optimization automations saving $10,000+/month<br>
+                • Enhanced hardened image pipelines (AMI/GCP) integrating Ansible playbooks and Packer<br>
+                • Engineered dynamic GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning<br>
+                • Authored comprehensive architecture documentation, SOPs, and Lucid/Draw.io diagrams
+              </div>
+            </div>
+
+            <div class="card company-card">
+              <div class="kv">Amazon Development Centre</div>
+              <div class="small" style="margin-top:8px">
+                <strong>DevOps Engineer (On-Call POC)</strong><br>
+                April 2022 – June 2023, Hyderabad<br><br>
+                Developed serverless automation & high-throughput Lambda workflows for large-scale S3→Lambda→DynamoDB processing. Built operational runbooks, contributed to VIP migration projects, and maintained production CI/CD systems.
+              </div>
+            </div>
+
+            <div class="card company-card">
+              <div class="kv">Tata Consultancy Services (TCS)</div>
+              <div class="small" style="margin-top:8px">
+                <strong>AWS DevOps / System Engineer</strong><br>
+                July 2019 – March 2022, Nagpur<br><br>
+                Managed Jenkins CI/CD pipelines, containerized applications with Docker & Kubernetes, automated monitoring/alerting for production services, and executed cloud migrations using Terraform.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Services & Expertise</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>☁️ Cloud Architecture & Migration</h3>
+              <p class="small">Design of resilient multi-cloud infrastructure (AWS/GCP), cost-optimized architecture, hybrid cloud patterns, and seamless migration strategies.</p>
+            </div>
+            <div class="card">
+              <h3>🚢 Kubernetes & Container Orchestration</h3>
+              <p class="small">Production cluster design (k3s/EKS/GKE), custom operators, high-availability patterns, observability integration, and SRE best practices.</p>
+            </div>
+            <div class="card">
+              <h3>⚙️ CI/CD & Infrastructure Automation</h3>
+              <p class="small">End-to-end pipeline engineering (GitLab/Jenkins/GitHub Actions), Infrastructure as Code (Terraform/Helm), automated testing, and deployment workflows.</p>
+            </div>
+            <div class="card">
+              <h3>🤖 Edge Computing & GPU Enablement</h3>
+              <p class="small">Edge cluster architecture (Jetson/hybrid), ML model serving patterns, GPU resource management, and edge-to-cloud integration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Education & Certifications</h2>
+          <div class="small">
+            <strong>Bachelor of Engineering — Computer Science & Engineering</strong><br>
+            Relevant coursework in distributed systems, cloud computing, and software engineering.<br><br>
+            <strong>Certifications:</strong> AWS Certified (Solutions Architect track), multiple Coursera & Google Cloud certifications. <a href="certifications.html">View all certifications →</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Get My Resume</h2>
+          <p class="small">Download the complete résumé with detailed project descriptions and technical accomplishments:</p>
+          <p><a class="cta" href="resume.pdf" target="_blank">📄 Download Resume (PDF)</a></p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="small">
+          <strong>Contact:</strong> vijayrmourya@gmail.com<br>
+          <a href="https://github.com/vijayrmourya" target="_blank">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/vijay-mourya-3b409b146" target="_blank">LinkedIn</a> ·
+          <a href="contact.html">Full Contact Info</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

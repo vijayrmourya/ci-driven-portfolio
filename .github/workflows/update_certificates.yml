@@ -1,0 +1,54 @@
+name: Generate Certificates
+
+concurrency:
+  group: portfolio-update-serialize
+  cancel-in-progress: false
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+jobs:
+  generate-certificates:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install PyYAML
+
+      - name: Generate certificates metadata
+        run: |
+          chmod +x .github/scripts/commit_and_push.sh .github/scripts/certificates_summary.sh && ls -l .github/scripts
+          echo "🔄 Generating certificates metadata from YAML..."
+          python3 tools/generate_certificates_from_yaml.py
+          echo "✅ Certificates metadata generated"
+
+      - name: Commit and push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILES: "assets/certificates.json"
+          COMMIT_MSG_TEMPLATE: "chore: update certificates.json ({COUNT} certificates) [skip ci]"
+          COUNT_CMD: "grep -c '\"title\"' assets/certificates.json || echo 0"
+        run: |
+          .github/scripts/commit_and_push.sh
+
+      - name: Summary
+        if: always()
+        run: |
+          .github/scripts/certificates_summary.sh assets/certificates.json

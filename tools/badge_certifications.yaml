@@ -1,0 +1,105 @@
+# Badge Certifications Configuration
+# This file manages certification badges displayed on the certifications page
+#
+# Instructions:
+#   1. Add your certification details below
+#   2. Place badge images in assets/badges/ folder
+#   3. Run: python3 tools/generate_badge_certifications.py
+#   4. The script will generate assets/badge_certifications.json
+#
+# Badge Image Sources:
+#   - Credly: Download badge from your Credly account
+#   - Coursera: Screenshot or download from certificate page
+#   - Google Cloud: Download from Skills Boost profile
+#   - LinkedIn: Screenshot from your certification section
+
+certifications:
+  # AWS Certified Certifications
+  - title: "Python for Data Science and AI"
+    provider: "Coursera (IBM)"
+    category: "Credentials"
+    badge_image: "PythonforDataScienceandAI.png"
+    verification_url: https://www.credly.com/badges/23c82168-0ce3-4c3b-b827-edb7a8b4837d
+    issue_date: '2025-12-22'
+    expiry_date: ''
+    credential_id: '23c82168-0ce3-4c3b-b827-edb7a8b4837d'
+    description: Click to Verify
+
+  - title: "AWS Cloud Quest - Generative AI Practitioner - Training Badge"
+    provider: "Amazon Web Services Training and Certification"
+    category: "Credentials"
+    badge_image: "AWSCloudQuestGenerativeAIPractitionerTrainingBadge.png"
+    verification_url: https://www.credly.com/badges/a5e55cbd-27d5-4f70-85d1-6892472e7c43
+    issue_date: '2025-11-20'
+    expiry_date: ''
+    credential_id: 'a5e55cbd-27d5-4f70-85d1-6892472e7c43'
+    description: Click to Verify
+
+  - title: "AWS Knowledge - Amazon EKS - Training Badge"
+    provider: "Amazon Web Services Training and Certification"
+    category: "Credentials"
+    badge_image: "AWSKnowledgeAmazonEKSTrainingBadge.png"
+    verification_url: https://www.credly.com/badges/882c41e2-0d80-408c-b61f-5a1addd1c081
+    issue_date: '2025-11-12'
+    expiry_date: ''
+    credential_id: '882c41e2-0d80-408c-b61f-5a1addd1c081'
+    description: Click to Verify
+
+  - title: "Well-Architected Proficient"
+    provider: "Amazon Web Services Training and Certification"
+    category: "Credentials"
+    badge_image: "WellArchitectedProficient.png"
+    verification_url: https://www.credly.com/badges/e5218185-f8ad-41e7-8a69-897bc91d189e
+    issue_date: '2025-11-09'
+    expiry_date: ''
+    credential_id: 'e5218185-f8ad-41e7-8a69-897bc91d189e'
+    description: Click to Verify
+
+  - title: "AWS Certified Solutions Architect – Associate"
+    provider: "Amazon Web Services Training and Certification"
+    category: "Credentials"
+    badge_image: "AWSCertifiedSolutionsArchitect–Associate.png"
+    verification_url: https://www.credly.com/badges/7c3c315a-8119-4aff-969a-c2758e371c2b
+    issue_date: '2022-08-29'
+    expiry_date: '2025-08-29'
+    credential_id: '7c3c315a-8119-4aff-969a-c2758e371c2b'
+    description: Click to Verify
+
+  - title: "Introduction to Cloud Computing"
+    provider: "Coursera (IBM)"
+    category: "Credentials"
+    badge_image: "Introduction to Cloud Computing.png"
+    verification_url: https://www.credly.com/badges/3b65e823-a928-418e-ae24-aa29dd5eac78
+    issue_date: '2024-01-21'
+    expiry_date: ''
+    credential_id: '3b65e823-a928-418e-ae24-aa29dd5eac78'
+    description: Click to Verify
+
+  - title: "DevOps Essentials"
+    provider: "Coursera (IBM)"
+    category: "Credentials"
+    badge_image: "DevOps Essentials.png"
+    verification_url: https://www.credly.com/badges/252bcb4c-f476-4e3b-9701-0f95f4243302
+    issue_date: '2024-01-21'
+    expiry_date: ''
+    credential_id: '252bcb4c-f476-4e3b-9701-0f95f4243302'
+    description: Click to Verify
+
+  - title: "Architecting with Google Kubernetes Engine"
+    provider: "Coursera (Google Cloud Training)"
+    category: "Credentials"
+    badge_image: "Coursera.png"
+    verification_url: https://www.coursera.org/account/accomplishments/specialization/certificate/JC2QIJQS5B7F
+    issue_date: '2025-07-10'
+    expiry_date: ''
+    credential_id: 'JC2QIJQS5B7F'
+    description: Click to Verify
+
+# Category Configuration
+categories:
+  Credentials:
+    display_name: Professional Credentials
+    icon: 🏆
+    color: '#FF9900'
+    description: Professional certifications and badges from AWS, Coursera, and other platforms
+    sort_order: 1
