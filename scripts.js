@@ -13,21 +13,14 @@ function renderMediumPosts(targetId='medium-posts') {
       }
 
       container.innerHTML = posts.map(p => `
-        <a href="${p.link}" target="_blank" rel="noopener" class="card" style="display:flex;flex-direction:column;text-decoration:none;transition:all 0.3s;padding:0;overflow:hidden">
-          ${p.thumbnail ? `
-            <div style="width:100%;height:160px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,0.1)">
-              <img src="${p.thumbnail}" alt="" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            </div>
-          ` : ''}
-          <div style="padding:20px;display:flex;flex-direction:column;flex:1">
-            <div style="margin-bottom:12px">
-              <strong style="color:#e6eef8;font-size:1.05rem;line-height:1.4;display:block">${p.title}</strong>
-            </div>
-            <div class="small" style="color:var(--muted);line-height:1.6;margin-bottom:12px;flex:1">${p.excerpt}</div>
-            <div class="small" style="color:var(--accent);font-weight:600;display:flex;justify-content:space-between;align-items:center">
-              <span>${p.date ? new Date(p.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'Read article'}</span>
-              <span style="font-size:0.8rem">Read more →</span>
-            </div>
+        <a href="${p.link}" target="_blank" rel="noopener" class="card" style="display:block;text-decoration:none;transition:all 0.3s">
+          <div style="margin-bottom:12px">
+            <strong style="color:#e6eef8;font-size:1.05rem;line-height:1.4;display:block">${p.title}</strong>
+          </div>
+          <div class="small" style="color:var(--muted);line-height:1.6;margin-bottom:12px">${p.excerpt}</div>
+          <div class="small" style="color:var(--accent);font-weight:600;display:flex;justify-content:space-between;align-items:center">
+            <span>${p.date ? new Date(p.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'Read article'}</span>
+            <span style="font-size:0.8rem">Read more →</span>
           </div>
         </a>
       `).join('');

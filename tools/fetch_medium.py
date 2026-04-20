@@ -18,24 +18,6 @@ def clean_html(raw_html):
     cleantext = ' '.join(cleantext.split())
     return unescape(cleantext)
 
-def extract_thumbnail(entry):
-    """Extract first image URL from content or summary, skipping tracking pixels"""
-    content = ""
-    if 'content' in entry:
-        content = entry['content'][0].value
-    elif 'summary' in entry:
-        content = entry['summary']
-    
-    # Look for all img src
-    img_matches = re.finditer(r'<img[^>]+src="([^">]+)"', content)
-    for match in img_matches:
-        url = match.group(1)
-        # Skip tracking pixels and stats
-        if 'stat?event' in url or 'pixel' in url or 'analytics' in url:
-            continue
-        return url
-    return None
-
 def excerpt_from_content(entry, length=160):
     if 'summary' in entry and entry['summary']:
         txt = clean_html(entry['summary'])
@@ -63,7 +45,6 @@ def main(output_path):
             'title': entry.get('title', 'Untitled'),
             'link': entry.get('link'),
             'date': date,
-            'thumbnail': extract_thumbnail(entry),
             'excerpt': excerpt_from_content(entry, length=160)
         })
 
