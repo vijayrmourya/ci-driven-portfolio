@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-06T10:26:02.446826",
+  "last_updated": "2026-04-20T16:31:29.965521",
   "total_count": 8,
   "categories": {
     "Credentials": {
@@ -8,21 +8,8 @@
       "color": "#FF9900",
       "description": "Professional certifications and badges from AWS, Coursera, and other platforms",
       "sort_order": 1,
-      "count": 9,
+      "count": 8,
       "certifications": [
-        {
-          "title": "CKA: Certified Kubernetes Administrator",
-          "provider": "The Linux Foundation",
-          "badge_image": "CKA.png",
-          "badge_path": "assets/badges/CKA.png",
-          "verification_url": "https://www.credly.com/badges/b6a26557-ea84-4697-b7fe-db7e87a7da58",
-          "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
-          "category": "Credentials",
-          "issue_date": "2026-02-05",
-          "expiry_date": "2028-02-06",
-          "credential_id": "LF-984czbffez",
-          "description": "Click to Verify"
-        },
         {
           "title": "Python for Data Science and AI",
           "provider": "Coursera (IBM)",
@@ -74,13 +61,13 @@
         {
           "title": "Architecting with Google Kubernetes Engine",
           "provider": "Coursera (Google Cloud Training)",
-          "badge_image": "Coursera.png",
-          "badge_path": "assets/badges/Coursera.png",
-          "verification_url": "https://www.coursera.org/account/accomplishments/specialization/certificate/JC2QIJQS5B7F",
+          "badge_image": "Google Kubernetes Engine.png",
+          "badge_path": "assets/badges/Google Kubernetes Engine.png",
+          "verification_url": "https://coursera.org/share/c05fe218635b0ed566ade2b0ce090947",
           "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
           "category": "Credentials",
           "issue_date": "2025-07-10",
-          "credential_id": "JC2QIJQS5B7F",
+          "credential_id": "c05fe218635b0ed566ade2b0ce090947",
           "description": "Click to Verify"
         },
         {
