@@ -1,189 +1,165 @@
 # Experience Configuration File
-# Last updated: 2025-12-31
+# Last updated: 2026-04-20
 #
 # Instructions:
 #   1. Update existing entries or add new experiences below
 #   2. Run: python3 tools/generate_experience.py
 #   3. The script will automatically update experience.html
-#
-# To add a new experience:
-#   1. Add an entry under 'experiences' with all required fields
-#   2. Add projects/contributions under 'projects' for that experience
-#   3. Run the generation script
 
 experiences:
-  - id: roche
+  - id: roche_lead
     company: Roche Information Solutions India
     location: Pune, India
-    role: Senior DevOps Engineer • Service Owner
-    start_date: "2023-07"
+    role: DevOps Engineer (Infra Reliability Team) & Service Owner SME
+    start_date: "2025-01"
     end_date: present
-    duration: 2.5+ years
+    duration: Present
     color: "#60a5fa"
     order: 1
-
     projects:
-      - title: "🎯 Agile Delivery Coordinator (Acting Team Lead)"
+      - title: "Professional Experience"
         highlights:
-          - "introduced AI tools for Daily Standups and Sprint Planning, as well implemting MCP servers for Jira automation, resulting in 20% reduction in meeting times"
-          - "Directly mentoring 2 new hires along with onboarding, managing their tasks and providing technical guidance"
-          - "Managing Jira board, sprint planning in absence of PM/PO, ensuring smooth team operations and timely delivery of sprint goals of 8 member team"
-          - "Unblocking team members by providing technical support, facilitating cross-team collaboration, and ensuring alignment with project objectives"
-          - "PI planning and backlog grooming sessions with PM/PO to prioritize tasks and plan releases effectively"
+          - "Multi-Cloud Architecture: Lead the team’s expansion from AWS to a multi-cloud environment (GCP and Azure), architecting a hardened OS Image pipeline supporting 1,000+ AWS accounts and 200+ GCP/Azure accounts"
+          - "Infrastructure Deliverables: Engineered automation to support 5 distinct Operating Systems and 20 variants tailored for Base, EKS, ECS, GKE, Deep Learning, and Parallel Clusters etc."
+          - "Orchestration & Scaling: Deployed EKS and GKE-based GitLab runners with strict tenant isolation, supporting complex KEDA workflows and scheduled jobs as the core of CI for 5 tenants with 1000+ jobs."
+          - "Serverless Governance: Architected a centralized AWS Patching-Service utilizing serverless & event-driven automation to manage monthly patching for 1,000+ EC2 instances across 500+ AWS accounts"
+          - "Technical Leadership: Served as Interim Team Lead; managed end-to-end recruitment, onboarding, and goal-setting while collaborating with Product Managers to define delivery timelines"
+          - "AIOps Innovation: Developed an LLM-integrated CLI tool for advanced debugging; implemented data & prompt engineering for log processing to optimize token usage, resulting in improved accuracy and cost efficiency"
+          - "Strategic Planning: Leading the zero-downtime migration of CI pipelines and codebase from GitLab to GitHub"
+          - "RAG Implementation: Developed a Proof of Concept (POC) RAG pipeline on AWS to enhance the internal documentation portal"
+          - "Professional Advocacy: Represented Roche at AWS re:Invent 2025, collaborating with AWS Technical Account Managers (TAMs) to align service roadmaps with organizational requirements"
+    tech_stack: "AWS (EKS, Lambda, EventBridge, Systems Manager, Bedrock, RAG, Athena, S3) • GCP (GKE, Cloud Build) • Azure • LLMs • Kubernetes (KEDA) • Terraform • GitLab CI/CD • GitHub Actions • Packer • Ansible • Python"
 
-      - title: "🎯 [Service Owner] Kubernetes-based GitLab CI/CD Infrastructure (EKS/GKE)"
+  - id: roche_engineer
+    company: Roche Information Solutions India
+    location: Pune, India
+    role: DevOps Engineer & Service Owner
+    start_date: "2023-07"
+    end_date: "2025-01"
+    duration: 1 year 6 months
+    color: "#60a5fa"
+    order: 2
+    projects:
+      - title: "Professional Experience"
         highlights:
-          - "Designed & deployed fully automated, scalable GitLab runner infrastructure across AWS and GCP in kubernetes environments (EKS/GKE) to support CI/CD pipelines for multiple teams"
-          - "Supporting 5+ teams and 2,500+ jobs per release cycle, reducing manual efforts significantly. enabling 30% faster release cycles and reliability improvements"
-          - "Developed on-demand deployment pipelines using AWS CodePipeline and GCP Cloud Build"
-          - "Automated GitLab runner provisioning via Helm-based deployments with integrated IAM configuration"
-          - "Packaged solution as reusable Terraform module for consistent, rapid deployments"
-          - "Authored comprehensive architecture and implementation documentation"
-          - "Standardized deployment process through IaC, achieving 30% faster delivery, reduced error rates, and cost optimization"
-
-      - title: "⚡ [Service Owner] Event-driven multi Account AWS Patch Management System"
-        highlights:
-          - "Designed and deployed fully automated, event-driven patch management solution for AWS"
-          - "Solution leverages AWS Serverless to patch multiple accounts efficiently, controlling the patch order between dev, staging, and production environments and promoting only tested patches to production"
-          - "Patching 500+ EC2 instances monthly, improving security and operational efficiency"
-          - "Developed metrics framework (Athena and S3) for actionable insights and BDD enablement"
-          - "Presented solution to ~500 attendees at domain-wide event with video tutorial content"
-          - "Authored technical documentation, troubleshooting SOPs, and system architecture diagrams (Lucid)"
-          - "Implemented CI/CD pipeline for serverless deployments with TDD practices (unit & integration tests)"
-          - "Recognized for optimizing patch management, reducing manual intervention, operational costs, and improving infrastructure security"
-
-      - title: "🚀 Other Key Contributions"
-        highlights:
-          - "proficient in using AI tools like copilot, custom AI agents, and custom scripts to automate routine tasks, enhance documentation, and optimize workflows"
-          - "Supported product launch initiatives through technical and business presentations"
-          - "Implemented AWS cost optimization automations, saving $10,000+/month by cleaning unused resources example: unattached EBS volumes and orphaned snapshots"
-          - "Deployed SSM document-based automations for configuration compliance and EC2 lifecycle management"
-          - "Enhanced hardened machine image (AMI/GCP image) pipelines integrating Ansible playbooks and Packer"
-          - "Engineered dynamic, parameterized GitLab CI pipelines using Jinja2, Python, YAML for one-click provisioning"
-
-    tech_stack: "AWS (EKS, Lambda, EventBridge, Systems Manager, CodePipeline, Athena, S3) • GCP (GKE, Cloud Build) • Kubernetes • Terraform • GitLab CI/CD • Helm • Packer • Ansible • Docker • Python • Jinja2 • Bash • Lucid/Draw.io"
+          - "Service Ownership: Designed and launched an event-driven, serverless patch management MVP that achieved rapid adoption by 10+ product teams across 30 AWS accounts"
+          - "Cost Optimization: Optimized deployment pipelines for EKS clusters and AMI distributions, resulting in approx. $10,000 YOY savings"
+          - "Security & Governance: Managed the AWS Account management pipeline, implementing SCPs and IAM hardening based on security protocols"
+          - "Automation Excellence: Eliminated manual overhead by building self-service pipelines for AMI distribution, cross-org image copying, and SSM document management for EC2 instances"
+          - "Data-Driven Growth: Developed a statistics and data processing pipeline to track patching service adoption metrics, using these insights to drive new feature development based on user pain points"
+          - "Release Management: Directed monthly release cycles, ensuring full compliance with release notes and distribution reporting"
+          - "Enablement: Authored comprehensive service documentation and recorded technical tutorial videos to streamline team and end-user onboarding"
+    tech_stack: "AWS (EKS, Lambda, EventBridge, SSM, S3, Athena) • Terraform • GitLab CI/CD • Helm • Packer • Ansible • Docker • Python • Jinja2 • Bash"
 
   - id: amazon
     company: Amazon Development Centre India
     location: Hyderabad, India
-    role: DevOps Engineer • On-Call PoC
-    start_date: "2022-04"
+    role: DevOps engineer, On-Call PoC
+    start_date: "2022-03"
     end_date: "2023-06"
     duration: 1 year 3 months
     color: "#60a5fa"
-    order: 2
-
+    order: 3
     projects:
-      - title: "⚙️ Serverless Ops Engine"
+      - title: "Professional Experience"
         highlights:
-          - "Developed serverless automation tools on AWS for organizational ticket tracking and process automation, improving operational efficiency and scalability by processing ~500 tickets monthly"
-          - "Designed and implemented high-throughput AWS Lambda workflows to process large-scale CSV/JSON data from S3"
-          - "Leveraged asynchronous invocation, file indexing, and function chaining to resolve Lambda timeout constraints and optimize data ingestion into DynamoDB"
-          - "Created solution design diagrams with Draw.io and documented implementation with SOP guide books"
-
-      - title: "🚨 On-Call & Incident Management"
-        highlights:
-          - "As Service PoC on call, authored detailed technical documentation, SOPs, and mitigation playbooks, significantly reducing recurring incidents and expediting team onboarding"
-          - "Managed high-severity incidents as primary on-call engineer, implementing mitigation strategies, root cause analyses, and proactive monitoring to minimize customer impact and prevent recurrence"
-          - "Contributed to KPI-driven monitoring and alerting efforts where within team I played key role in identifying KPIs to monitor & alert teams on any anomalies"
-
-      - title: "🔄 HTTP(S) VIP Migration Project"
-        highlights:
-          - "Contributed in HTTP(s) VIP migration project, transitioning infrastructure from NetScaler to AWS native load balancers (ALB/NLB)"
-          - "Developed comprehensive migration, rollback, and automation strategies, including IAM role design, prerequisite validation, and migration timeline planning"
-          - "Collaborated with globally distributed teams, contributing to system design reviews and code quality assurance to ensure robust, production-ready deliverables"
-
+          - "High-Scale Data Engineering: Designed and implemented high-throughput AWS Lambda workflows to process TB-scale CSV/JSON data from S3"
+          - "Lambda Optimization: Overcame execution timeout constraints by leveraging asynchronous invocation, file indexing, and function chaining to optimize data ingestion into DynamoDB"
+          - "Infrastructure Migration: Orchestrated a large-scale HTTP(s) VIP migration, transitioning legacy infrastructure from NetScaler to AWS native load balancers (ALB/NLB)"
+          - "Migration Strategy: Developed comprehensive rollback and automation strategies, including IAM role design, prerequisite validation, and migration timeline planning"
+          - "Incident Management: Served as the Primary On-Call POC for high-severity incidents, executing mitigation strategies and Root Cause Analysis (RCA) to minimize customer impact"
+          - "Operational Excellence: Authored detailed technical documentation, SOP guide books, and mitigation playbooks using Draw.io, which expedited team onboarding and reduced recurring incidents"
+          - "Observability & Monitoring: Led KPI-driven monitoring initiatives, identifying critical metrics and anomalies to enhance proactive system alerting"
+          - "Serverless Automation: Engineered AWS-based serverless tools for organizational ticket tracking and process automation, improving overall operational scalability"
+          - "Global Collaboration: Partnered with globally distributed teams to conduct system design reviews and ensure production-ready code quality for robust deliverables"
     tech_stack: "AWS (Lambda, S3, DynamoDB, ALB/NLB, CloudWatch, SNS, SQS) • Python • Draw.io • On-Call Operations • Root Cause Analysis"
 
   - id: tcs
-    company: Tata Consultancy Services Limited
+    company: Tata Consultancy Services
     location: Nagpur, India
     role: DevOps Engineer
     start_date: "2019-07"
     end_date: "2022-03"
     duration: 2 years 9 months
     color: "#60a5fa"
-    order: 3
-
+    order: 4
     projects:
-      - title: "☁️ On-Prem to Cloud Migration"
+      - title: "Professional Experience"
         highlights:
-          - "Supported cloud migration project by provisioning AWS Compute and Storage resources using Terraform and CloudFormation"
-          - "Automating AMI creation with Packer & Ansible to bake custom tools into servers"
-          - "Implemented hybrid infrastructure by integrating on-premises servers with AWS for file sharing (NAS) and establishing secure connectivity"
-
-      - title: "🔄 Disaster Recovery & CI/CD"
-        highlights:
-          - "Engineered \"point in time\" disaster recovery solutions, automating failover with Jenkins jobs triggered by SQS and developing Lambda-based monitoring and recovery actions"
-          - "Managed & Supported robust CI/CD pipelines in Jenkins for microservices and MFEs, leveraging shared libraries, multibranch pipelines, and integration with AWS CLI, SSM, and Lambda triggers"
-
-      - title: "📊 Infrastructure & Operations"
-        highlights:
-          - "Automated infrastructure monitoring and alerting using CloudWatch, SNS, and Lambda, ensuring high availability and incident response"
-          - "Deployed and managed containerized applications with Docker and Kubernetes, supporting microservices and troubleshooting pod deployments"
-          - "Collaborated with clients and internal teams to provide project updates, conduct infrastructure knowledge transfer, and deliver disaster recovery planning and documentation"
-          - "Contributed to documentation and SOPs to streamline operations, improve onboarding, and standardize change management processes"
-
+          - "Cloud Migration & IaC: Provisioned scalable AWS compute and storage resources using Terraform and CloudFormation to support large-scale cloud migration projects"
+          - "Infrastructure Automation: Automated custom AMI creation and tool-baking processes using Packer and Ansible, ensuring environment consistency across the organization"
+          - "Disaster Recovery (DR) Engineering: Engineered \"point-in-time\" disaster recovery solutions; developed automated failover mechanisms using Jenkins jobs triggered by SQS and Lambda-based monitoring"
+          - "CI/CD Orchestration: Managed robust Jenkins CI/CD pipelines for microservices and Micro Frontends (MFEs), leveraging shared libraries and multibranch pipelines integrated with AWS CLI and SSM"
+          - "Observability & Alerting: Automated infrastructure monitoring using CloudWatch, SNS, and Lambda to ensure high availability and rapid incident response"
+          - "Client Management & SOPs: Facilitated infrastructure knowledge transfers and project updates for clients; authored documentation and SOPs to standardize Change Management and onboarding processes"
     tech_stack: "AWS (EC2, S3, CloudWatch, SNS, SQS, Lambda) • Terraform • CloudFormation • Jenkins • Packer • Ansible • Docker • Kubernetes • Python • Bash"
 
 # Achievements Section
 achievements:
   - icon: "🎤"
-    title: Live Presentation
-    description: Presented service release to 500+ team members at Roche
+    title: AWS re:Invent Speaker/Advocate
+    description: Represented Roche at AWS re:Invent 2025, collaborating with AWS TAMs on service roadmaps.
 
   - icon: "🏆"
-    title: Recognition Awards
-    description: 3 internal recognitions/Applause for technical excellence 2024-2025
+    title: Technical Excellence
+    description: Multiple internal recognitions for AIOps innovation and multi-cloud architecture leadership.
 
   - icon: "📐"
     title: Architecture Design
-    description: Service architecture design and comprehensive documentation
+    description: Service architecture design for multi-cloud Golden Image pipelines and serverless governance.
 
   - icon: "📚"
     title: Documentation
-    description: Extensive technical documentation and SOPs
+    description: Extensive technical documentation, SOPs, and video tutorials for global engineering teams.
 
 # Conferences
 conferences:
+  - name: AWS re:Invent 2025
+    icon: "☁️"
+    location: Las Vegas, USA
+
   - name: KubeCon + CloudNativeCon
     icon: "🌐"
-    location: India 2024 • Hyderabad
-
-  - name: AWS re:Invent
-    icon: "☁️"
-    location: 2024 • Las Vegas, USA
+    location: India 2025 • Hyderabad
 
 # Skills
 skills:
+  - category: "🤖 AIOps & AI"
+    items:
+      - "LLM Integration (Amazon Bedrock)"
+      - "RAG Pipeline implementation"
+      - "Prompt Engineering for DevOps logs"
+      - "AI-driven operational excellence"
+
   - category: "☁️ Cloud Platforms"
     items:
-      - "<strong>AWS:</strong> EC2, EKS, Lambda, S3, DynamoDB, EventBridge, Systems Manager, CloudFormation, CloudWatch"
+      - "<strong>AWS:</strong> EKS, Lambda, S3, DynamoDB, EventBridge, Systems Manager, Bedrock"
       - "<strong>GCP:</strong> GKE, Compute Engine, Cloud Functions, Cloud Storage"
+      - "<strong>Azure:</strong> Compute, Storage, Governance"
       - "Multi-cloud architecture & cost optimization"
 
   - category: "🏗️ Infrastructure as Code"
     items:
       - "Terraform (modules, remote state, workspaces)"
       - "Ansible (playbooks, roles, vault)"
-      - "Packer (AMI/image building)"
+      - "Packer (Hardened AMI/image building)"
       - "Helm (chart development & management)"
       - "CloudFormation"
 
   - category: "🚀 CI/CD & DevOps"
     items:
-      - "GitLab CI/CD (runners, pipelines, GitOps)"
+      - "GitLab CI/CD (KEDA, complex runners)"
+      - "GitHub Actions & Migrations"
       - "Jenkins (pipelines, plugins, distributed builds)"
-      - "GitHub Actions"
       - "ArgoCD / GitOps practices"
       - "Security scanning (Trivy, SonarQube)"
 
   - category: "🐳 Containers & Orchestration"
     items:
-      - "Kubernetes (EKS, GKE, on-prem)"
-      - "Docker (multi-stage builds, optimization)"
+      - "Kubernetes (EKS, GKE, strict isolation)"
+      - "KEDA (event-driven autoscaling)"
+      - "Docker (multi-stage optimization)"
       - "Container security & best practices"
-      - "Service mesh (exploring Istio)"
 
   - category: "📊 Observability & Monitoring"
     items:
@@ -193,17 +169,9 @@ skills:
       - "Distributed tracing & APM"
       - "SRE practices & SLA/SLO management"
 
-  - category: "💻 Programming & Scripting"
-    items:
-      - "Python (automation, serverless, data processing)"
-      - "Bash/Shell scripting"
-      - "Go (learning for tooling)"
-      - "SQL (Athena, DynamoDB queries)"
-      - "YAML, JSON, HCL"
-
 # Career highlights stats
 career_stats:
-  - value: "6+"
+  - value: "7+"
     label: Years of Experience
     color: "#60a5fa"
 
@@ -211,17 +179,16 @@ career_stats:
     label: Major Organizations
     color: "#4fd1c5"
 
-  - value: "2,500+"
-    label: Jobs per Release Cycle
+  - value: "1,000+"
+    label: CI/CD Jobs monthly
     color: "#60a5fa"
 
   - value: "$10K+"
-    label: Monthly Cost Savings
+    label: YOY Savings
     color: "#4fd1c5"
 
 # Page metadata
 metadata:
   page_title: "Work Experience — Vijay Mourya"
   hero_title: "Professional Experience"
-  hero_subtitle: "6+ years building reliable cloud infrastructure and DevOps platforms across AWS, GCP, Kubernetes, and production-grade CI/CD pipelines."
-
+  hero_subtitle: "Seven years building reliable cloud infrastructure and DevOps platforms across AWS, GCP, Azure, and production-grade CI/CD pipelines."

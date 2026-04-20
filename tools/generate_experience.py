@@ -13,7 +13,7 @@ def load_experience_config():
     """Load experience configuration from YAML file"""
     config_path = Path(__file__).parent / 'experience.yaml'
 
-    with open(config_path, 'r') as f:
+    with open(config_path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
 
     return config
@@ -270,23 +270,21 @@ def generate_experience_html(config):
 
 def main():
     """Main function"""
-    print("🚀 Generating experience.html from YAML configuration...")
-
     # Load config
     config = load_experience_config()
-    print(f"✓ Loaded configuration with {len(config['experiences'])} experiences")
+    print(f"Loaded configuration with {len(config['experiences'])} experiences")
 
     # Generate HTML
     html = generate_experience_html(config)
 
     # Write to file
     output_path = Path(__file__).parent.parent / 'experience.html'
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html)
 
-    print(f"✓ Generated experience.html successfully!")
-    print(f"✓ Output: {output_path}")
-    print("\n✨ Experience page updated! Refresh your browser to see changes.")
+    print(f"Generated experience.html successfully!")
+    print(f"Output: {output_path}")
+    print("\nExperience page updated! Refresh your browser to see changes.")
 
 
 if __name__ == '__main__':
