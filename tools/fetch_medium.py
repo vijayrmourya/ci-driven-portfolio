@@ -1,18 +1,52 @@
 #!/usr/bin/env python3
 # tools/fetch_medium.py
-import sys, json, os, feedparser
+import sys, json, os, feedparser, re
 from html import unescape
 from datetime import datetime
 
-def excerpt_from_content(entry, length=200):
+def clean_html(raw_html):
+    """Remove HTML tags and clean up whitespace"""
+    if not raw_html:
+        return ""
+    # Remove script and style elements
+    cleanr = re.compile('<script.*?>.*?</script>|<style.*?>.*?</style>', re.DOTALL)
+    cleantext = re.sub(cleanr, '', raw_html)
+    # Remove other tags
+    cleanr = re.compile('<.*?>')
+    cleantext = re.sub(cleanr, ' ', cleantext)
+    # Clean up whitespace
+    cleantext = ' '.join(cleantext.split())
+    return unescape(cleantext)
+
+def extract_thumbnail(entry):
+    """Extract first image URL from content or summary, skipping tracking pixels"""
+    content = ""
+    if 'content' in entry:
+        content = entry['content'][0].value
+    elif 'summary' in entry:
+        content = entry['summary']
+    
+    # Look for all img src
+    img_matches = re.finditer(r'<img[^>]+src="([^">]+)"', content)
+    for match in img_matches:
+        url = match.group(1)
+        # Skip tracking pixels and stats
+        if 'stat?event' in url or 'pixel' in url or 'analytics' in url:
+            continue
+        return url
+    return None
+
+def excerpt_from_content(entry, length=160):
     if 'summary' in entry and entry['summary']:
-        txt = unescape(entry['summary'])
+        txt = clean_html(entry['summary'])
     elif 'content' in entry and entry['content']:
-        txt = unescape(entry['content'][0].value)
+        txt = clean_html(entry['content'][0].value)
     else:
         txt = ''
-    txt = ' '.join(txt.split())
-    return (txt[:length] + '…') if len(txt) > length else txt
+    
+    if len(txt) > length:
+        return txt[:length].rsplit(' ', 1)[0] + '...'
+    return txt
 
 def main(output_path):
     username = os.getenv('MEDIUM_USERNAME', 'vjmourya').strip()
@@ -29,7 +63,8 @@ def main(output_path):
             'title': entry.get('title', 'Untitled'),
             'link': entry.get('link'),
             'date': date,
-            'excerpt': excerpt_from_content(entry, length=200)
+            'thumbnail': extract_thumbnail(entry),
+            'excerpt': excerpt_from_content(entry, length=160)
         })
 
     # ensure output dir exists
