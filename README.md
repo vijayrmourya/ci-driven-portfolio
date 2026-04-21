@@ -1,5 +1,9 @@
 # Vijay Mourya - Portfolio Website
 
+[![Fetch Medium Posts](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/fetch_medium.yml/badge.svg)](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/fetch_medium.yml)
+[![Update Experience](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/update_experience.yml/badge.svg)](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/update_experience.yml)
+[![Update Certificates](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/update_certificates.yml/badge.svg)](https://github.com/vijayrmourya/ci-driven-portfolio/actions/workflows/update_certificates.yml)
+
 A CI-Driven Personal Portfolio Platform that automates content generation and builds a professional static website using Python scripts and GitHub Actions. The site pulls structured data (certifications, experience, blog posts) from YAML and external sources, automates updates via workflows, and is hosted on GitHub Pages. This repository exemplifies automation, infrastructure-as-code thinking, and architectural delight in a real personal platform.
 
 **Live Site:** [vijayrmourya.github.io](https://vijayrmourya.github.io)
@@ -149,9 +153,15 @@ env:
 
 ---
 
+## Contributing
+
+As this is a personal portfolio website, I am not currently accepting pull requests for content or design changes. However, feel free to fork the repository for inspiration or report any technical bugs in the issues tracker.
+
 ## License
 
-© 2025 Vijay Mourya. All rights reserved.
+© 2024-2025 Vijay Mourya. **All Rights Reserved.**
+
+This project is personal and is not licensed for public use, redistribution, or modification. The source code is provided here as a showcase of my technical work and automation architecture. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
