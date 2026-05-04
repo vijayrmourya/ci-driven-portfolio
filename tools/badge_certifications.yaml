@@ -84,7 +84,7 @@ certifications:
     expiry_date: ''
     credential_id: '882c41e2-0d80-408c-b61f-5a1addd1c081'
     description: Click to Verify
-  - title: "Generative AI Practitioner - Training Badge"
+  - title: "Generative AI Practitioner - Training Badge"practitioner
     provider: "Amazon Web Services Training and Certification"
     category: "Credentials"
     cert_type: "Certified Badges"
