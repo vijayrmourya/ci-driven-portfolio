@@ -24,6 +24,16 @@ certifications:
     expiry_date: ''
     credential_id: ''
     description: Click to Verify
+  - title: "Create Your First Gemini Enterprise Application"
+    provider: "Google Cloud"
+    category: "Credentials"
+    cert_type: "Certified Badges"
+    badge_image: "create-your-first-gemini-enterprise-application.png"
+    verification_url: https://www.credly.com/badges/a843b7c6-29ff-4ec3-b520-79b7d23d4e53/public_url
+    issue_date: '2026-05-04'
+    expiry_date: ''
+    credential_id: 'a843b7c6-29ff-4ec3-b520-79b7d23d4e53'
+    description: Click to Verify
   - title: "Well-Architected Proficient"
     provider: "Amazon Web Services"
     category: "Credentials"
@@ -84,7 +94,7 @@ certifications:
     expiry_date: ''
     credential_id: '882c41e2-0d80-408c-b61f-5a1addd1c081'
     description: Click to Verify
-  - title: "Generative AI Practitioner - Training Badge"practitioner
+  - title: "Generative AI Practitioner - Training Badge"
     provider: "Amazon Web Services Training and Certification"
     category: "Credentials"
     cert_type: "Certified Badges"
