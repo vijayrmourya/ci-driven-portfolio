@@ -141,7 +141,8 @@ def generate_badge_certifications_json(config, badges_dir, project_root):
             'badge_path': f'assets/badges/{cert["badge_image"]}',
             'verification_url': cert.get('verification_url', ''),
             'fallback_svg': generate_fallback_svg(cert['provider'], cert['title']),
-            'category': category
+            'category': category,
+            'cert_type': cert.get('cert_type', 'Certified Badges')
         }
 
         # Add optional fields if present and not empty
