@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-04T23:06:03.924455",
-  "total_count": 10,
+  "last_updated": "2026-05-05T13:07:09.067251",
+  "total_count": 11,
   "categories": {
     "Credentials": {
       "display_name": "Professional Credentials",
@@ -8,8 +8,22 @@
       "color": "#FF9900",
       "description": "Professional certifications and badges from AWS, Coursera, and other platforms",
       "sort_order": 1,
-      "count": 10,
+      "count": 11,
       "certifications": [
+        {
+          "title": "AWS Certified Machine Learning Engineer – Associate",
+          "provider": "Amazon Web Services Training and Certification",
+          "badge_image": "aws-certified-machine-learning-engineer-associate.png",
+          "badge_path": "assets/badges/aws-certified-machine-learning-engineer-associate.png",
+          "verification_url": "https://www.credly.com/badges/d0e28214-65f7-475a-b883-6da5fa116deb/public_url",
+          "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
+          "category": "Credentials",
+          "cert_type": "Certificates",
+          "issue_date": "2026-05-05",
+          "expiry_date": "2029-05-05",
+          "credential_id": "d0e28214-65f7-475a-b883-6da5fa116deb",
+          "description": "Click to Verify"
+        },
         {
           "title": "Create Your First Gemini Enterprise Application",
           "provider": "Google Cloud",
@@ -98,8 +112,7 @@
           "fallback_svg": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect fill='#4A90E2' width='140' height='140' rx='10'/%3E%3Ctext x='70' y='75' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ECERT%3C/text%3E%3C/svg%3E",
           "category": "Credentials",
           "cert_type": "Certificates",
-          "issue_date": "2025-07-10",
-          "description": "Click to Verify"
+          "issue_date": "2025-07-10"
         },
         {
           "title": "Introduction to Cloud Computing",
