@@ -19,7 +19,7 @@ experiences:
     projects:
       - title: "Professional Experience"
         highlights:
-          - "Multi-Cloud Architecture: Lead the team’s expansion from AWS to a multi-cloud environment (GCP and Azure), architecting a hardened OS Image pipeline supporting 1,000+ AWS accounts and 200+ GCP/Azure accounts"
+          - "Multi-Cloud Architecture: Lead the team’s expansion from AWS to a multi-cloud environment (GCP and Azure), architecting a hardened OS Image pipeline supporting 500+ AWS accounts and 200+ GCP/Azure accounts"
           - "Infrastructure Deliverables: Engineered automation to support 5 distinct Operating Systems and 20 variants tailored for Base, EKS, ECS, GKE, Deep Learning, and Parallel Clusters etc."
           - "Orchestration & Scaling: Deployed EKS and GKE-based GitLab runners with strict tenant isolation, supporting complex KEDA workflows and scheduled jobs as the core of CI for 5 tenants with 1000+ jobs."
           - "Serverless Governance: Architected a centralized AWS Patching-Service utilizing serverless & event-driven automation to manage monthly patching for 1,000+ EC2 instances across 500+ AWS accounts"
